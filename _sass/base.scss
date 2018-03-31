@@ -1,0 +1,95 @@
+body{
+  font-family: $font-face;
+  font-size: $font-size;
+  line-height: $default-spacing;
+  color: $font-color;
+  background-color:$background-color;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover { text-decoration: underline }
+  &:link,
+  &:active {
+    color: $link-visited-color;
+  }
+
+  &[target=_blank]::after{
+    content: '(external link)';
+    display: inline-block;
+    width: $font-size;
+    height: $font-size;
+    text-indent: $font-size;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/44/Icon_External_Link.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-left: .1em;
+  }
+}
+
+:target {
+  background: $highlight;
+}
+
+header[role=main]{
+  h1{ font-size:$font-size*2; }
+  nav ul{
+    padding-left:$default-spacing;
+    li p{
+      margin:$default-spacing/2 0;
+    }
+  }
+
+  // Menu
+  input[type="checkbox"]#toggle-menu,
+  label[for="toggle-menu"]{ display:none; }
+  label[for="toggle-menu"]{
+    width:$font-size;
+    margin-top: $default-spacing;
+    cursor: pointer;
+  }
+}
+
+div.footnotes{
+  border-top: solid $secondary-background-color thin;
+  margin-top: $default-spacing*2;
+  color: $secondary-font-color;
+}
+
+@media only screen and (max-width: 480px) {
+  header[role=main]{
+    h1{
+      display:inline-block;
+      margin-bottom: 0;
+    }
+    label[for="toggle-menu"]{
+      display:block;
+      float: left;
+      margin-right: $default-spacing;
+      &:before{
+        content: $closed-menu-content;
+      }
+    }
+    nav{
+      display:none;
+      border-bottom: solid $secondary-background-color thin;
+      & > ul{
+        margin-top:0;
+      }
+    }
+
+    input[type="checkbox"]#toggle-menu:checked ~ label:before{ content:$opened-menu-content; }
+    input[type="checkbox"]#toggle-menu:checked ~ nav{ display:block; }
+  }
+
+  main{
+    h1{
+      font-size:$font-size*2;
+    }
+  }
+}

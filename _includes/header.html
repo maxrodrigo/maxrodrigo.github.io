@@ -1,0 +1,53 @@
+<header role="main">
+
+  <input type="checkbox" id="toggle-menu" {% if page.url == '/' %} checked {% endif %}>
+  <label for="toggle-menu"></label>
+
+  <h1>{{ site.title }}</h1>
+  <nav>
+    <ul>
+      <li>
+      <p>{% if page.url != '/' %} <a href="/">~/</a> {% else %} ~/ {% endif %}</p>
+        <ul id="pages">
+          {% for node in site.pages %}
+            {% if node.title and node.show_in_menu != false %}
+              <li>
+                {% include link.html page=node %}
+
+                {% comment %} Collections {% endcomment %}
+                {% comment %}
+                    A page with the collection name must exists in order to show the index page and the submenu
+                {% endcomment %}
+                {% assign node_name = node.name | remove:'.md' %}
+                {% if site[node_name] %}
+                  <ul>
+                    {% for subnode in site[node_name] limit:site.menu_subitems_limit %}
+                      <li>
+                        {% include link.html page=subnode %}
+                      </li>
+                    {% endfor %}
+
+                    {% comment %} Adds more link {% endcomment %}
+                    {% assign menu_subitems_total = site[node_name] | size %}
+                    {% if menu_subitems_total > site.menu_subitems_limit %}
+                        <li><a href="{{node.url}}">[more]</a></li>
+                    {% endif %}
+                  </ul>
+                {% endif %}
+
+              </li>
+            {% endif %} <!-- /if show_in_menu -->
+          {% endfor %} <!-- /site.pages -->
+        </ul>
+      </li>
+      <li>
+        <p><a href="about.html#contact">contact</a></p>
+        <ul>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><a href="skype:maxi.rodrigo?call">Skype</a></li>
+          <li><a href="https://www.linkedin.com/in/maxrodrigo/">LinkedIn</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>

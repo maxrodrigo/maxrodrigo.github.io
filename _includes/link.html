@@ -1,0 +1,21 @@
+{% if include.page.url == page.url %}
+  {{ include.page.title }} ●
+{% else %}
+    <a
+      title="{{ include.page.title }}"
+
+      {% comment %} Link {% endcomment %}
+      {% if include.page.external_url %}
+        href="{{ include.page.external_url }}"
+      {% else %}
+        href="{{ include.page.url }}"
+      {% endif %}
+
+      {% comment %} Link target {% endcomment %}
+      {% if include.page.target == 'blank' %}
+         target="_blank"
+      {% endif %}
+    >
+    {{ include.page.title }}
+  </a>
+{% endif %}

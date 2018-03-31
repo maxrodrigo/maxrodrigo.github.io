@@ -1,0 +1,32 @@
+title: "Max Rodrigo"
+description: "Software developer"
+author: "Maximiliano Rodrigo"
+email: "hello@wxr.me"
+url: "https://wxr.me"
+logo: "/assets/images/favicon.png"
+
+menu_subitems_limit: 5
+
+collections:
+    slides:
+        output: true
+    websites:
+
+defaults:
+    - scope:
+        path: ""
+      values:
+        layout: "default"
+    - scope:
+        type: "slides"
+      values:
+        layout: "slide"
+        target: "blank"
+
+sass:
+    style: compressed
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji

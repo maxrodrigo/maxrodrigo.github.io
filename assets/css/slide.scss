@@ -1,0 +1,37 @@
+---
+---
+
+body{
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+h1, h2, h3{
+  font-weight: normal;
+}
+
+textarea#source{ display:none; }
+
+.remark-slide-content{ background-size: cover; }
+
+#slide-cover{
+  padding:0;
+
+  div.header{
+    display:inherit;
+    padding:1em 4em;
+    height:40%;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    color:white;
+
+            backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  img{
+    width:100%;
+  }
+
+  .personal-data p{
+    text-align:right;
+  }
+}

@@ -1,0 +1,24 @@
+---
+title: About
+---
+{% assign birthdate = 491141100 %}
+
+Curriculum Vitae: [ [PDF Version]( /assets/pdf/Luis_Maximiliano_Rodrigo_Zubieta_Resume.pdf ) ]  [ [ HTML Version]( resume.html ) ]
+
+Hello, my name is Max. I'm a {{ 'now' | date: "%s" | minus: birthdate | divided_by: 31557600 | floor }}[^birthdate] years old software engineer based in ~~[Buenos Aires]( https://www.google.com.ar/maps/place/Buenos+Aires/ )~~  ~~[Madrid]( https://www.google.com.ar/maps/place/Madrid/ )~~  ~~[Minneapolis]( https://www.google.com.ar/maps/place/Minneapolis/ )~~ [Barcelona]( https://www.google.com.ar/maps/place/Barcelona/ ).  
+I am currently working as a Python backend engineer specialized in distributed systems, CI/CD, scalability and security.
+
+### Contact {#contact}
+
+If you have any questions feel free to e-mail me at [hello@wxr.me]( mailto:hello@wxr.me ) [[Public key]( gpg.html )][^xkcd] or you can find me on:
+- [@maxrodrigo]( https://github.com/maxrodrigo/ ) on GitHub
+- [LinkedIn]( https://www.linkedin.com/in/maxrodrigo/ )
+- [maxi.rodrigo]( skype:maxi.rodrigo?call ) on Skype
+- [Freenode]( http://www.freenode.net ) as @wxr
+- ~~██████ on Something Awful~~
+
+Built with :heart: and [Jekyll]( https://jekyllrb.com/ ) since 2013.
+
+[^birthdate]: DOB: {{ birthdate }}
+[^xkcd]: Relevant xkcd: <https://xkcd.com/1553/> / <https://xkcd.com/364/>
+
