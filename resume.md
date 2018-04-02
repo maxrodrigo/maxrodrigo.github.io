@@ -16,8 +16,8 @@ show_in_menu: false
 ## Summary
 
 I'm a passionate software engineer with significant experience in Python, PHP and system administration.  
-Over the past fifteen years I've been a teacher, a consultant, and a tech lead, as well as a speaker at various conferences. I've done developing and consulting for top companies, hospitals, and universities.  
-Although Python is my current language of choice, I also have significant experience with C, PHP, and Javascript. I also have a strong background in system administration and data analysis.  
+Over the past fifteen years I have been a teacher, a consultant, and a tech lead, as well as a speaker at various conferences. I have done developing and consulting for top companies, hospitals, and universities.  
+Although Python is my current language of choice, I also have significant experience with C, PHP, and JavaScript. I also have a strong background in system administration and data analysis.  
 I'm self-disciplined, fast learner and I truly believe everything can be done.
 
 
@@ -51,11 +51,11 @@ LoveToKnowMedia Spain - Yourdictionary.com
 
 - Development of the new search engine using Elasticsearch.
 - Design of the development and QA team workflows.
-- Design of development styleguides and processes.
+- Design of development style guides and processes.
 - Design and implementation the Continues Delivery process.
 - Redesign and development of the local development and testing environments.
 - Documentation of new processes, workflows and style guides.
-- Custom tools for the development team. Automatic deployments, tagging, integrations, cleanups, etc.
+- Custom tools for the development team. Automatic deployments, tagging, integration, cleanups, etc.
 - Implementation of A/B Testing.
 - Incremented page speed by 68% 
 - Made deployment process with AWS in less than 26sec.
@@ -69,9 +69,9 @@ Searches
 - Database Administration - High Availability, Load Balancing, and Replication of massive databases mostly MySQL and PostgreSQL.
 - Coding and optimization of report scripts and queries.  
   Developed responsive, interactive visualizations using D3.js
-- CNP Processing (Card-not-Present Transactions) - Merchant accounts integration. Chargeback Forecasting & Analysis with Python.
+- CNP Processing (Card-not-Present Transactions) - Merchant accounts integration. Charge-back Forecasting & Analysis with Python.
 - PHP - Migration, maintenance and optimization on more than 100 websites using Zend, vBulletin, phpBB, Wordpress, Joomla, TGPs and custom scripts.
-- Python - Recoding and reimplementation of legacy code in PHP, Pascal and C. Data Analysis, Marketing Automation, Billing Software, CMS development.
+- Python - Re-coding and re-implementation of legacy code in PHP, Pascal and C. Data Analysis, Marketing Automation, Billing Software, CMS development.
 
 
 __Co-Founder - CTO__  
@@ -119,9 +119,9 @@ __Software Developer__
 Independent
 <span class="date">(2002 - )</span>
 
-Througout these years I've being working on project I like
+Throughout these years I have being working on project I like
 
-Things I've done and technologies I've worked with:
+Things I have done and technologies I have worked with:
 
 - Backend development in Python
   - Django, Flask, Pyramid, SQLAlchemy, Pewee
