@@ -4,8 +4,8 @@
   justify-content:start;
 
   header[role=main]{
-    margin-right:$default-spacing*2;
-    min-width: 19em;
+    margin-right:$default-spacing * 2;
+    min-width: $default-spacing * 10;
   }
 }
 
