@@ -1,3 +1,5 @@
+{% assign pagename = page.name | remove:'.md' %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,10 +20,9 @@
         {{ content }}
 
         {% comment %} Collection {% endcomment %}
-        {% assign node_name = page.name | remove:'.md' %}
-        {% if site[node_name] %}
+        {% if site[pagename] %}
         <dl>
-          {% for node in site[node_name] %}
+          {% for node in site[pagename] %}
             <dt>
                 {% include link.html page=node %}
             </dt>
@@ -33,7 +34,7 @@
           {% endfor %}
         </dl>
         {% endif %}
-        {% comment %} END Collection {% endcomment %}
+        {% comment %} END collection {% endcomment %}
       </main>
     </div>
     {% if jekyll.environment == "production" %}

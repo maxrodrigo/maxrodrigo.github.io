@@ -55,6 +55,30 @@ header[role=main]{
   }
 }
 
+.books, .talks{ padding-left: 0; }
+
+.book{
+  list-style:none;
+  margin-bottom: $default-spacing;
+
+  img{
+    width:60px;
+    vertical-align:top;
+  }
+  p{
+    display:inline-block;
+    width: calc( 100% - 70px)
+  }
+  .title{ font-weight:bold; }
+  .author{ display:block; }
+}
+
+.talk{
+  list-style:none;
+  .title{ font-weight:bold; }
+  .author{ display:block; }
+}
+
 div.footnotes{
   border-top: solid $secondary-background-color thin;
   margin-top: $default-spacing*2;
