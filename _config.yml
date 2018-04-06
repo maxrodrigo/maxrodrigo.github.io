@@ -1,8 +1,8 @@
 title: "Max Rodrigo"
-description: "Software developer"
+description: "Software Engineer"
 author: "Maximiliano Rodrigo"
-email: "hello@wxr.me"
-url: "https://wxr.me"
+email: "contact@maxrodrigo.com"
+url: "http://maxrodrigo.com"
 logo: "/assets/image/favicon.png"
 
 exclude: [ "script/", "Gemfile", "Gemfile.lock", "LICENSE" ]
