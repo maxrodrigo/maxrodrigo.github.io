@@ -32,6 +32,10 @@ books:
 
 talks:
   -
+    title: "SOLID Principles of Object Oriented & Agile Design"
+    author: "Robert \"Uncle Bob\" Martin"
+    url: "https://youtu.be/QHnLmvDxGTY"
+  -
     title: "Tech Talk: Linus Torvalds on git"
     author: "Linux Torvalds"
     url: "https://youtu.be/4XpnKHJAok8"
