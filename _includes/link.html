@@ -7,13 +7,9 @@
       {% comment %} Link {% endcomment %}
       {% if include.page.external_url %}
         href="{{ include.page.external_url }}"
+        target="_blank"
       {% else %}
         href="{{ include.page.url }}"
-      {% endif %}
-
-      {% comment %} Link target {% endcomment %}
-      {% if include.page.target == 'blank' %}
-         target="_blank"
       {% endif %}
     >
     {{ include.page.title }}
