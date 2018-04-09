@@ -30,6 +30,13 @@ books:
     year: 2014
     cover: "/assets/image/book/the-hacker-playbook-2.jpg"
 
+publications:
+  -
+    title: "Architectural Styles and the Design of Network-based Software Architectures"
+    author: "Roy Thomas Fielding"
+    url: "https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf"
+
+
 talks:
   -
     title: "SOLID Principles of Object Oriented & Agile Design"

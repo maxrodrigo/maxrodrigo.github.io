@@ -55,10 +55,16 @@ header[role=main]{
   }
 }
 
-.books, .talks{ padding-left: 0; }
-.book, .talk{
-  list-style:none;
-  margin-bottom: $default-spacing;
+.bookshelf{
+    padding: 0;
+
+    li{
+      list-style:none;
+      margin-bottom: $default-spacing;
+
+      .title{ font-weight:bold; }
+      .author{ display:block; }
+    }
 }
 
 .book{
@@ -70,13 +76,6 @@ header[role=main]{
     display:inline-block;
     width: calc( 100% - 70px)
   }
-  .title{ font-weight:bold; }
-  .author{ display:block; }
-}
-
-.talk{
-  .title{ font-weight:bold; }
-  .author{ display:block; }
 }
 
 div.footnotes{

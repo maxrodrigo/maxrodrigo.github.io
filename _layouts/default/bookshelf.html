@@ -5,7 +5,7 @@ layout: default
 {{ content }}
 
 <h2>Books</h2>
-<ul class="books">
+<ul class="bookshelf">
 {% for book in site.data.bookshelf.books %}
     <li class="book">
         <img src="{{ book.cover }}" alt="'{{ book.title }}' book cover">
@@ -17,8 +17,19 @@ layout: default
 {% endfor %}
 </ul>
 
+<h2>Publications</h2>
+<ul class="bookshelf">
+{% for publication in site.data.bookshelf.publications %}
+    <li class="publication">
+        <span class="title">{{ publication.title }}</span>
+        <span class="author">{{ publication.author }}</span>
+        <a href="{{ publication.url }}" target="_blank">{{ publication.url }}</a>
+    </li>
+{% endfor %}
+</ul>
+
 <h2>Talks</h2>
-<ul class="talks">
+<ul class="bookshelf">
 {% for talk in site.data.bookshelf.talks %}
     <li class="talk">
         <span class="title">{{ talk.title }}</span>
