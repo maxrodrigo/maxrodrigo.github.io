@@ -3,32 +3,32 @@ books:
     title: "Structure and Interpretation of Computer Programs"
     author: "Harold Abelson, Gerald Jay Sussman, Julie Sussman"
     year: 1979
-    cover: "/assets/image/book/structure-and-interpretation-of-computer-programs.jpg"
+    cover: "/assets/images/book/structure-and-interpretation-of-computer-programs.jpg"
   -
     title: "UNIX and Linux System Administration Handbook"
     author: "Evi Nemethm, Garth Snyder, Trent R. Hein, Ben Whaley"
     year: 2010
-    cover: "/assets/image/book/unix-and-linux-administration-handbook.jpg"
+    cover: "/assets/images/book/unix-and-linux-administration-handbook.jpg"
   -
     title: "Clean Code"
     author: "Robert Cecil Martin"
     year: 2008
-    cover: "/assets/image/book/clean-code.jpg"
+    cover: "/assets/images/book/clean-code.jpg"
   -
     title: "Operating Systems: Design And Implementation"
     author: "Andrew S. Tanenbaum"
     year: 1987
-    cover: "/assets/image/book/operating-systems.jpg"
+    cover: "/assets/images/book/operating-systems.jpg"
   -
     title: "The Art of Deception: Controlling the Human Element of Security"
     author: "Kevin D. Mitnick, William L. Simon"
     year: 2001
-    cover: "/assets/image/book/the-art-of-deception.jpg"
+    cover: "/assets/images/book/the-art-of-deception.jpg"
   -
     title: "The Hacker Playbook 2: Practical Guide to Penetration Testing"
     author: "Peter Kim"
     year: 2014
-    cover: "/assets/image/book/the-hacker-playbook-2.jpg"
+    cover: "/assets/images/book/the-hacker-playbook-2.jpg"
 
 publications:
   -
