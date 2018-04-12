@@ -2,7 +2,7 @@
 title: Public Key
 ---
 
-You can download my [PGP Key](/assets/dl/wxr_332BDA67.asc),
+You can download my [PGP Key](/assets/key/wxr_332BDA67.asc),
 see it on [pgp.mit.edu](http://pgp.mit.edu/pks/lookup?op=get&search=0x5AA0AD31332BDA67){:target="blank"}
 or [SELECT](javascript:void(0)){:onclick="SelectText('pgp-key');"}, copy/paste.
 
