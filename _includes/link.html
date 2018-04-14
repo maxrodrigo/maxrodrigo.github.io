@@ -1,5 +1,13 @@
+{% comment %} Displayed link title is truncated if not in the home page {% endcomment %}
+
+{% if page.url == '/' %}
+    {% assign display_title = include.page.title %}
+{% else %}
+    {% assign display_title = include.page.title | truncate: 20 %}
+{% endif %}
+
 {% if include.page.url == page.url %}
-  {{ include.page.title }} ●
+  {{ display_title }} ●
 {% else %}
     <a
       title="{{ include.page.title }}"
@@ -12,6 +20,6 @@
         href="{{ include.page.url }}"
       {% endif %}
     >
-    {{ include.page.title }}
+    {{ display_title }}
   </a>
 {% endif %}
