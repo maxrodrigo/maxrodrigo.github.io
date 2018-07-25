@@ -19,6 +19,6 @@ If you have any questions feel free to e-mail me at [{{ site.email }}]( mailto:{
 
 Built with :heart: and [Jekyll]( https://jekyllrb.com/ ) since 2013.
 
-[^birthdate]: DOB: {{ birthdate }} - 33yo gift: <http://www.ilovepumbaa.com/>
+[^birthdate]: DOB: {{ birthdate }} - 33yo gift <http://www.ilovepumbaa.com/>
 [^xkcd]: Relevant xkcd: <https://xkcd.com/1553/> / <https://xkcd.com/364/>
 
