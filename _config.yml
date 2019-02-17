@@ -2,7 +2,7 @@ title: "Max Rodrigo"
 description: "Software Engineer"
 author: "Maximiliano Rodrigo"
 email: "contact@maxrodrigo.com"
-url: "http://maxrodrigo.com"
+url: "https://www.maxrodrigo.com"
 logo: "/assets/images/favicon.png"
 
 exclude: [ "script/", "Gemfile", "Gemfile.lock", "LICENSE" ]
