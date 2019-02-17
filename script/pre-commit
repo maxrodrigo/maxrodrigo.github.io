@@ -11,6 +11,6 @@ bundle exec htmlproofer --disable-external --check-favicon ./_site
 # https://stackoverflow.com/a/16607741/578050
 if [[ $(git diff --cached --name-status | grep resume.md) ]]; then
   echo 'New version of resume.md founded.'
-  ./script/gen_resume_pdf &&
+  ./script/resume_pdf.sh &&
   git add ./assets/pdf
 fi

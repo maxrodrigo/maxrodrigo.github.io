@@ -17,7 +17,7 @@ new_pdf="${pdf_path}/$new_pdf_filename"
 # rdate replace rdate placeholder inside the pdf file
 rdate=$(stat -f "%Sm" -t "%B %d, %Y" ./resume.md)
 
-echo 'Generating resume PDF...'
+echo 'Generating resume PDFe..'
 wkhtmltopdf --disable-smart-shrinking \
             --dpi 300 \
             --print-media-type \
