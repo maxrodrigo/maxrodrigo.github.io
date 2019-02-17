@@ -10,24 +10,23 @@ show_in_menu: false
 |Nationality | Argentina / Spain |
 |Languages | Spanish / English |
 |Email | [contact@maxrodrigo.com](mailto:contact@maxrodrigo.com) / [rodrigo.maxi@gmail.com](mailto:rodrigo.maxi@gmail.com) |
-|Website | [maxrodrigo.com](https://maxrodrigo.com) |
+|Website | [www.maxrodrigo.com](https://www.maxrodrigo.com) |
 |LinkedIn | [/in/maxrodrigo/](https://www.linkedin.com/in/maxrodrigo/) |
 
 ## Summary
 
-I'm a passionate software engineer with significant experience in Python, PHP and system administration.  
-Over the past fifteen years I have been a teacher, a consultant, and a tech lead, as well as a speaker at various conferences. I have done developing and consulting for top companies, hospitals, and universities.  
-Although Python is my current language of choice, I also have significant experience with C, PHP, and JavaScript. I also have a strong background in system administration and data analysis.  
-I'm self-disciplined, fast learner and I truly believe everything can be done.
+I’m a passionate software engineer with significant experience in Python, PHP and system administration.  
+Over the past sixteen years, I’ve been a developer, a teacher, a consultant, and a team lead. I’ve done developing and consulting for top companies, hospitals, and universities.  
+Although Python is my current language of choice, I also have significant experience with C, PHP, and Javascript. I also have a strong background in system administration and architecture.  
+I’m self-disciplined, fast learner and I truly believe everything can be done.
 
 
 ### TECHNICAL STRENGTHS
 
-- Continuous Delivery Architecture
-- Software Architecture, distributed systems, high availability, scalability.
+- Cloud Architecture, Serverless Architecture, High Availability, Scalability.
 - System Administration
 - Backend development / Web Applications
-  - Development and design of RESTful APIs.
+  - Development and Design of RESTful APIs.
   - SQL databases.
   - Containerization ( LXC / Docker )
 - Database Administration
@@ -38,28 +37,38 @@ I'm self-disciplined, fast learner and I truly believe everything can be done.
 - Python
   - Data acquisition and analysis, multi-processing, High Performance.
   - Command-line applications development.
-  - Django, Flask, Pyramid, SQLAlchemy, Pewee
+  - Django, Flask, Falcon, SQLAlchemy, Jupyter.
 - PHP
   - Design and optimization for high traffic websites.
   - Zend / Symfony / Slim / Laravel
 
 ## Professional Experience
 
-__Senior Backend Engineer__  
+__Cloud Architect / Backend Engineer__  
 LoveToKnowMedia Spain - Yourdictionary.com
 <span class="date">(September 2017 - )</span>
 
-- Development of the new search engine using Elasticsearch.
-- Design of the development and QA team workflows.
-- Design of development style guides and processes.
-- Design and implementation the Continues Delivery process.
-- Redesign and development of the local development and testing environments.
-- Documentation of new processes, workflows and style guides.
-- Custom tools for the development team. Automatic deployments, tagging, integration, cleanups, etc.
-- Implementation of A/B Testing.
-- Incremented page speed by 68% 
-- Made deployment process with AWS in less than 26sec.
-- Interviewing and recruitment for the engineering dept.
+Python Backend Engineer and Cloud Architecture. Serverless applications, process automation, and team and product scalability.
+
+- Backend Development and Architecture
+  - Migrate a cross-product monolithic architecture to a serverless architecture over AWS.
+  - Deploy dozens of REST API endpoints with AWS Lambda and a variety of AWS services.
+  - Create a cross-product server side serverless A/B Testing.
+  - Test and benchmarking of deployments libraries as Zappa, Serverless, Chalice, etc.
+  - Setup and maintenance of AWS services.
+
+- Teams and processes restructuring
+- Design of style and contribution guides and collaboration processes.
+- Design and implementation of Testing, C/D and C/I processes.
+- Migration and centralization of the company code bases on GitHub.
+- Facilitate engineering processes for POs and Scrum masters.
+- Set a coding philosophy of clean coding, refactoring and peer reviews.
+- Custom tools for Automatic deployments, tagging, integration, cleanups, etc.
+
+- Others
+  - Interviewing and recruitment for the engineering dept.
+  - Monitoring tools.
+  - Create personal and helped on Tech Teams OKRs.
 
 __Technical Lead__  
 Searches
