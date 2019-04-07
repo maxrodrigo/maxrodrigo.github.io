@@ -14,7 +14,7 @@ If you have any questions feel free to e-mail me at [{{ site.email }}]( mailto:{
 - [@maxrodrigo]( https://github.com/maxrodrigo/ ) on GitHub
 - [LinkedIn]( https://www.linkedin.com/in/maxrodrigo/ )
 - [maxi.rodrigo]( skype:maxi.rodrigo?call ) on Skype
-- [Freenode]( http://www.freenode.net ) as @wxr
+- [Freenode]( http://www.freenode.net ) as @maxrodrigo
 - ~~██████ on Something Awful~~
 
 Built with :heart: and [Jekyll]( https://jekyllrb.com/ ) since 2013.
