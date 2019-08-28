@@ -6,7 +6,9 @@ title: About
 Curriculum Vitae: [ [PDF Version]( /assets/pdf/Luis_Maximiliano_Rodrigo_Zubieta_Resume.pdf ) ]  [ [ HTML Version]( resume.html ) ]
 
 Hello, my name is Max. I'm a {{ 'now' | date: "%s" | minus: birthdate | divided_by: 31557600 | floor }}[^birthdate] years old software engineer based in ~~[Buenos Aires]( https://www.google.com.ar/maps/place/Buenos+Aires/ )~~  ~~[Madrid]( https://www.google.com.ar/maps/place/Madrid/ )~~  ~~[Minneapolis]( https://www.google.com.ar/maps/place/Minneapolis/ )~~ [Barcelona]( https://www.google.com.ar/maps/place/Barcelona/ ).  
-I am currently working as a Senior Backend Engineer specialized in Python, architecture,  scalability and security.
+I am currently working as a Senior Backend Engineer specialized in Python and Cloud Architecture.
+
+![EFF Member](/assets/images/eff-membership.png)
 
 ### Contact {#contact}
 
