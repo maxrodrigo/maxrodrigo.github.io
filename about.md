@@ -15,9 +15,10 @@ I am currently working as a Senior Backend Engineer specialized in Python and Cl
 If you have any questions feel free to e-mail me at [{{ site.email }}]( mailto:{{ site.email }} ) [[Public key]( gpg.html )][^xkcd] or you can find me on:
 - [@maxrodrigo]( https://github.com/maxrodrigo/ ) on GitHub
 - [LinkedIn]( https://www.linkedin.com/in/maxrodrigo/ )
-- [maxi.rodrigo]( skype:maxi.rodrigo?call ) on Skype
 - [Freenode]( http://www.freenode.net ) as @maxrodrigo
 - ~~██████ on Something Awful~~
+
+** I don't have social networks. **
 
 Built with :heart: and [Jekyll]( https://jekyllrb.com/ ) since 2013.
 
