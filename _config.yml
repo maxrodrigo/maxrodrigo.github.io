@@ -9,17 +9,25 @@ exclude: [ "script/", "Gemfile", "Gemfile.lock", "LICENSE" ]
 
 collections:
     posts:
-      output: true
       permalink: /notes/:title.html
     slides:
       output: true
 
 defaults:
-    - scope:
+    - 
+      scope:
         path: ""
+        type: "pages"
       values:
         layout: "default"
-    - scope:
+    - 
+      scope:
+        path: ""
+        type: "posts"
+      values:
+        layout: "default/post"
+    - 
+      scope:
         type: "slides"
       values:
         layout: "slide"
