@@ -17,23 +17,6 @@
                 <h1>{{ page.title }}</h1>
 
                 {{ content }}
-
-                {% comment %} Collection {% endcomment %}
-                {% if site[pagename] %}
-                    <dl>
-                        {% for node in site[pagename] %}
-                            <dt>
-                                {% include link.html page=node %}
-                            </dt>
-
-                            {% if node.description %}
-                                <dd>{{ node.description | newline_to_br }}</dd>
-                            {% endif %}
-
-                        {% endfor %}
-                    </dl>
-                {% endif %}
-                {% comment %} END collection {% endcomment %}
             </main>
         </div>
         {% if jekyll.environment == "production" %}

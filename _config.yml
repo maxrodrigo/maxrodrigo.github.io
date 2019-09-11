@@ -15,7 +15,6 @@ collections:
       permalink: /notes/:title.html
     slides:
       output: true
-    websites:
 
 defaults:
     - scope:
