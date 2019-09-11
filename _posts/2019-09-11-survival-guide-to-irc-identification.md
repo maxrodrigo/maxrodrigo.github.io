@@ -29,16 +29,22 @@ Next time you log into the network, you will be prompted for your account passwo
 
 ## Update your information
 
-Update the email address associated with the current account.
+Update the email address.
 
 ```
 /msg NickServ SET email <new-email-address>
 ```
 
-Update the password associated with the current account.
+Update the password.
 
 ```
 /msg NickServ SET password <new-password>
+```
+
+Update the account nickname. It should be any nickname registered to your account.
+
+```
+/msg NickServ SET accountname <nickname>
 ```
 
 ## Password Recovery
