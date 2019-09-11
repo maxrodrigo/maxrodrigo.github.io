@@ -10,8 +10,11 @@ exclude: [ "script/", "Gemfile", "Gemfile.lock", "LICENSE" ]
 menu_subitems_limit: 5
 
 collections:
+    posts:
+      output: true
+      permalink: /notes/:title.html
     slides:
-        output: true
+      output: true
     websites:
 
 defaults:
