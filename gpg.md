@@ -6,7 +6,7 @@ title: Public Key
 
 You can download my [PGP Key](/assets/key/maxrodrigo_personal_key.gpg) or [SELECT](javascript:void(0)){:onclick="SelectText('pgp-key');"}, copy/paste.
 
-```
+<pre id="pgp-key">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBF1RcwIBEADt/MfUIKNNBCFRBGpW8oqC2I8jahdYVd0A5intNKF2R6y9lyY5
@@ -59,14 +59,12 @@ hPfBnZl7rMYan4v42PftaVS3927skJULzDv7kemF/G+H+Br8sTfDJ9o07bLqk9GY
 UhGvEe8fzbz/kCqRfgxA4wivOR4x
 =U4Tx
 -----END PGP PUBLIC KEY BLOCK-----
-```
-{:#pgp-key}
+</pre>
 
 <script type="text/javascript">
 function SelectText(element) {
     var doc = document;
     var text = doc.getElementById(element);
-      console.log('max');
     if (doc.body.createTextRange) {
         var range = document.body.createTextRange();
         range.moveToElementText(text);

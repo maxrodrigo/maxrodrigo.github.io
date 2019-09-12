@@ -36,6 +36,19 @@ a {
   background: $highlight;
 }
 
+
+pre {
+  white-space: pre-wrap; //css3
+  white-space: moz-pre-wrap; //firefox
+  white-space: -pre-wrap; //opera 4-6
+  white-space: -o-pre-wrap; //opera 7
+  word-wrap: break-word; //internet explorer
+
+  &.highlight{
+    padding: $default-spacing;
+  }
+}
+
 header[role=main]{
   h1{ font-size:$font-size*2; }
   nav ul{
@@ -52,6 +65,17 @@ header[role=main]{
     width:$font-size;
     margin-top: $default-spacing;
     cursor: pointer;
+  }
+}
+
+#container{
+  margin:0 $default-spacing;
+  display:flex;
+  justify-content:start;
+
+  header[role=main]{
+    margin-right:$default-spacing * 2;
+    min-width: $default-spacing * 10;
   }
 }
 
@@ -108,6 +132,14 @@ div.footnotes{
 
     input[type="checkbox"]#toggle-menu:checked ~ label:before{ content:$opened-menu-content; }
     input[type="checkbox"]#toggle-menu:checked ~ nav{ display:block; }
+  }
+
+  #container{
+    flex-direction: column;
+    header[role=main]{
+      margin-right:0;
+      margin-bottom: $default-spacing;
+    }
   }
 
   main{
