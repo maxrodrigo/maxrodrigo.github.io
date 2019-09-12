@@ -3,7 +3,7 @@ body{
   font-size: $font-size;
   line-height: $default-spacing;
   color: $font-color;
-  background-color:$background-color;
+  background-color:$color;
 }
 
 a {
@@ -24,7 +24,7 @@ a {
     text-indent: $font-size;
     white-space: nowrap;
     overflow: hidden;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/44/Icon_External_Link.svg);
+    background-image: url(/assets/images/external_link_icon.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -67,21 +67,21 @@ header[role=main]{
     }
 }
 
-.book{
-  img{
+.book {
+  img {
     width:60px;
     vertical-align:top;
   }
-  p{
+  p {
     display:inline-block;
     width: calc( 100% - 70px)
   }
 }
 
 div.footnotes{
-  border-top: solid $secondary-background-color thin;
+  border-top: solid $dark-color thin;
   margin-top: $default-spacing*2;
-  color: $secondary-font-color;
+  color: $light-font-color;
 }
 
 @media only screen and (max-width: 480px) {
@@ -100,7 +100,7 @@ div.footnotes{
     }
     nav{
       display:none;
-      border-bottom: solid $secondary-background-color thin;
+      border-bottom: solid $dark-color thin;
       & > ul{
         margin-top:0;
       }
