@@ -1,7 +1,7 @@
 ---
 title: Survival Guide to IRC identification
 ---
-NickServ is the utility used for registration and protection of nicknames. It allows users to register a nickname, and prevent others from using that nickname. 
+NickServ is the utility used for registration and protection of nicknames. It allows users to register, and prevent others from using it. 
 
 For a deeper understanding of the service, I recommend using the online HELP.
 
