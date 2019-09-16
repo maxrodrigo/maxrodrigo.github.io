@@ -1,7 +1,7 @@
 ---
 title: About
 ---
-{% assign birthdate = 491141100 %}
+{%- assign birthdate = 491141100 -%}
 
 Curriculum Vitae: [ [PDF Version]( /assets/pdf/Luis_Maximiliano_Rodrigo_Zubieta_Resume.pdf ) ]  [ [ HTML Version]( resume.html ) ]
 

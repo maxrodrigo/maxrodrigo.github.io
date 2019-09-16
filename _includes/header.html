@@ -1,21 +1,21 @@
 <header role="main">
 
-  <input type="checkbox" id="toggle-menu" {% if page.url == '/' %} checked {% endif %}>
+  <input type="checkbox" id="toggle-menu" {%- if page.url == '/' -%} checked {%- endif -%}>
   <label for="toggle-menu"></label>
 
   <h1>{{ site.title }}</h1>
   <nav>
     <ul>
       <li>
-      <p>{% if page.url != '/' %} <a href="/">~/</a> {% else %} ~/ {% endif %}</p>
+      <p>{%- if page.url != '/' -%} <a href="/">~/</a> {%- else -%} ~/ {%- endif -%}</p>
         <ul id="pages">
-          {% for node in site.pages %}
-            {% if node.title and node.show_in_menu != false %}
+          {%- for node in site.pages -%}
+            {%- if node.title and node.show_in_menu != false -%}
               <li>
-                {% include link.html page=node %}
+                {%- include link.html page=node -%}
               </li>
-            {% endif %}
-          {% endfor %}
+            {%- endif -%}
+          {%- endfor -%}
         </ul>
       </li>
       <li>

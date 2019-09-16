@@ -6,7 +6,7 @@ layout: default
 
 <h2>Books</h2>
 <ul class="bookshelf">
-{% for book in site.data.bookshelf.books %}
+{%- for book in site.data.bookshelf.books -%}
     <li class="book">
         <img src="{{ book.cover }}" alt="'{{ book.title }}' book cover">
         <p>
@@ -14,27 +14,27 @@ layout: default
             <span class="author">by {{ book.author }}</span>
         </p>
     </li>
-{% endfor %}
+{%- endfor -%}
 </ul>
 
 <h2>Publications</h2>
 <ul class="bookshelf">
-{% for publication in site.data.bookshelf.publications %}
+{%- for publication in site.data.bookshelf.publications -%}
     <li class="publication">
         <span class="title">{{ publication.title }}</span>
         <span class="author">{{ publication.author }}</span>
         <a href="{{ publication.url }}" target="_blank">{{ publication.url }}</a>
     </li>
-{% endfor %}
+{%- endfor -%}
 </ul>
 
 <h2>Talks</h2>
 <ul class="bookshelf">
-{% for talk in site.data.bookshelf.talks %}
+{%- for talk in site.data.bookshelf.talks -%}
     <li class="talk">
         <span class="title">{{ talk.title }}</span>
         <span class="author">{{ talk.author }}</span>
         <a href="{{ talk.url }}" target="_blank">{{ talk.url }}</a>
     </li>
-{% endfor %}
+{%- endfor -%}
 </ul>

@@ -3,20 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        {% seo %}
+        {%- seo -%}
         <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png"/>
         <link rel="apple-touch-icon" href="/assets/images/favicon.png">
         <link rel="stylesheet" href="/assets/css/main.css">
     </head>
     <body>
         <div id="container">
-            {% include header.html %}
+            {%- include header.html -%}
             <main>
                 <h1>{{ page.title }}</h1>
                 {{ content }}
             </main>
         </div>
-        {% if jekyll.environment == "production" %}
+        {%- if jekyll.environment == "production" -%}
             <script>
                 (function(f, a, t, h, o, m){
                     a[h]=a[h]||function(){
@@ -30,6 +30,6 @@
                 fathom('set', 'siteId', 'HMLTQ');
                 fathom('trackPageview');
             </script>
-        {% endif %}
+        {%- endif -%}
     </body>
 </html>

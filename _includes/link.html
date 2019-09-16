@@ -1,17 +1,17 @@
-{% if include.page.url == page.url %}
+{%- if include.page.url == page.url -%}
   {{ include.page.title }} ●
-{% else %}
+{%- else -%}
     <a
       title="{{ include.page.title }}"
 
-      {% comment %} Link {% endcomment %}
-      {% if include.page.external_url %}
+      {%- comment -%} Link {%- endcomment -%}
+      {%- if include.page.external_url -%}
         href="{{ include.page.external_url }}"
         target="_blank"
-      {% else %}
+      {%- else -%}
         href="{{ include.page.url }}"
-      {% endif %}
+      {%- endif -%}
     >
     {{ include.page.title }}
   </a>
-{% endif %}
+{%- endif -%}
