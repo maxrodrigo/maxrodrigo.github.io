@@ -16,7 +16,7 @@ If you have any questions feel free to e-mail me at [{{ site.email }}]( mailto:{
 - [@maxrodrigo]( https://github.com/maxrodrigo/ ) on GitHub
 - [LinkedIn]( https://www.linkedin.com/in/maxrodrigo/ )
 - [Freenode]( http://www.freenode.net ) as @maxrodrigo
-- ~~██████ on Something Awful~~
+- ~~██████ on [SA](https://github.com/bibanon/bibanon/wiki/Something-Awful)~~
 
 Built with :heart: and [Jekyll]( https://jekyllrb.com/ ) since 2013.
 
