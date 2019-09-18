@@ -42,4 +42,4 @@ Missing dependencies can be found simply filtering Chrome's shared libraries:
 ldd chrome | grep not
 ```
 
-Comment, review or star at: [https://gist.github.com/maxrodrigo/9d91e48c19244ead6ef5b466957be0ab]()
+Comment, review or star at: <https://gist.github.com/maxrodrigo/9d91e48c19244ead6ef5b466957be0ab>
