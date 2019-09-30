@@ -9,7 +9,8 @@
       <li>
       <p>{%- if page.url != '/' -%} <a href="/">~/</a> {%- else -%} ~/ {%- endif -%}</p>
         <ul id="pages">
-          {%- for node in site.pages -%}
+          {%- assign sorted_pages = site.pages | sort: "title" -%}
+          {%- for node in sorted_pages -%}
             {%- if node.title and node.show_in_menu != false -%}
               <li>
                 {%- include link.html page=node -%}
