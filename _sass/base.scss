@@ -1,150 +1,153 @@
 body{
-  font-family: $font-face;
-  font-size: $font-size;
-  line-height: $default-spacing;
-  color: $font-color;
-  background-color:$color;
+    font-family: $font-face;
+    font-size: $font-size;
+    line-height: $default-spacing;
+    color: $font-color;
+    background-color:$color;
 }
 
 a {
-  color: $link-color;
-  text-decoration: none;
+    color: $link-color;
+    text-decoration: none;
 
-  &:hover { text-decoration: underline }
-  &:link,
-  &:active {
-    color: $link-visited-color;
-  }
+    &:hover { text-decoration: underline }
+    &:link,
+    &:active {
+        color: $link-visited-color;
+    }
 
-  &[target=_blank]::after{
-    content: '(external link)';
-    display: inline-block;
-    width: $font-size;
-    height: $font-size;
-    text-indent: $font-size;
-    white-space: nowrap;
-    overflow: hidden;
-    background-image: url(/assets/images/external_link_icon.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    margin-left: .1em;
-  }
+    &[target=_blank]::after{
+        content: '(external link)';
+        display: inline-block;
+        width: $font-size;
+        height: $font-size;
+        text-indent: $font-size;
+        white-space: nowrap;
+        overflow: hidden;
+        background-image: url(/assets/images/external_link_icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        margin-left: .1em;
+    }
 }
 
 :target {
-  background: $highlight;
+    background: $highlight;
 }
 
 
 pre {
-  white-space: pre-wrap; //css3
-  white-space: moz-pre-wrap; //firefox
-  white-space: -pre-wrap; //opera 4-6
-  white-space: -o-pre-wrap; //opera 7
-  word-wrap: break-word; //internet explorer
+    white-space: pre-wrap; //css3
+    white-space: moz-pre-wrap; //firefox
+    white-space: -pre-wrap; //opera 4-6
+    white-space: -o-pre-wrap; //opera 7
+    word-wrap: break-word; //internet explorer
 
-  &.highlight{
-    padding: $default-spacing;
-  }
+    &.highlight{
+        padding: $default-spacing;
+    }
 }
 
 header[role=main]{
-  h1{ font-size:$font-size*2; }
-  nav ul{
-    padding-left:$default-spacing;
-    li p{
-      margin:$default-spacing/2 0;
-    }
-  }
+    margin-right: $default-spacing * 2;
+    min-width: $default-spacing * 10;
 
-  // Menu
-  input[type="checkbox"]#toggle-menu,
-  label[for="toggle-menu"]{ display:none; }
-  label[for="toggle-menu"]{
-    width:$font-size;
-    margin-top: $default-spacing;
-    cursor: pointer;
-  }
+    h1{ font-size:$font-size*2; }
+    nav ul{
+        padding-left:$default-spacing;
+        li p{
+            margin:$default-spacing/2 0;
+        }
+    }
+    input[type="checkbox"]#toggle-menu,
+    label[for="toggle-menu"]{ display:none; }
+    label[for="toggle-menu"]{
+        width:$font-size;
+        margin-top: $default-spacing;
+        cursor: pointer;
+    }
 }
 
 #container{
-  margin:0 $default-spacing;
-  display:flex;
-  justify-content:start;
+    margin:0 $default-spacing;
+    display:flex;
+    justify-content:start;
+}
 
-  header[role=main]{
-    margin-right:$default-spacing * 2;
-    min-width: $default-spacing * 10;
-  }
+.note {
+    time {
+        color: $light-font-color;
+    }
 }
 
 .bookshelf{
     padding: 0;
 
     li{
-      list-style:none;
-      margin-bottom: $default-spacing;
+        list-style:none;
+        margin-bottom: $default-spacing;
 
-      .title{ font-weight:bold; }
-      .author{ display:block; }
+        .title{ font-weight:bold; }
+        .author{ display:block; }
     }
 }
 
 .book {
-  img {
-    width:60px;
-    vertical-align:top;
-  }
-  p {
-    display:inline-block;
-    width: calc( 100% - 70px)
-  }
+    img {
+        width:60px;
+        vertical-align:top;
+    }
+    p {
+        display:inline-block;
+        width: calc( 100% - 70px)
+    }
 }
 
-div.footnotes{
-  border-top: solid $dark-color thin;
-  margin-top: $default-spacing*2;
-  color: $light-font-color;
+.footnotes{
+    border-top: solid $dark-color thin;
+    margin-top: $default-spacing*2;
+    color: $light-font-color;
 }
 
 @media only screen and (max-width: 480px) {
-  header[role=main]{
-    h1{
-      display:inline-block;
-      margin-bottom: 0;
-    }
-    label[for="toggle-menu"]{
-      display:block;
-      float: left;
-      margin-right: $default-spacing;
-      &:before{
-        content: $closed-menu-content;
-      }
-    }
-    nav{
-      display:none;
-      border-bottom: solid $dark-color thin;
-      & > ul{
-        margin-top:0;
-      }
-    }
-
-    input[type="checkbox"]#toggle-menu:checked ~ label:before{ content:$opened-menu-content; }
-    input[type="checkbox"]#toggle-menu:checked ~ nav{ display:block; }
-  }
-
-  #container{
-    flex-direction: column;
     header[role=main]{
-      margin-right:0;
-      margin-bottom: $default-spacing;
-    }
-  }
+        h1{
+            display:inline-block;
+            margin-bottom: 0;
+        }
+        label[for="toggle-menu"]{
+            display:block;
+            float: left;
+            margin-right: $default-spacing;
+            &:before{
+                content: $closed-menu-content;
+            }
+        }
+        nav{
+            display:none;
+            border-bottom: solid $dark-color thin;
+            & > ul{
+                margin-top:0;
+            }
+        }
 
-  main{
-    h1{
-      font-size:$font-size*2;
+        input[type="checkbox"]#toggle-menu:checked ~ label:before{ content:$opened-menu-content; }
+        input[type="checkbox"]#toggle-menu:checked ~ nav{ display:block; }
     }
-  }
+
+    header[role=main]{
+        margin-right:0;
+        margin-bottom: $default-spacing;
+    }
+
+    #container{
+        flex-direction: column;
+    }
+
+    main{
+        h1{
+            font-size:$font-size*2;
+        }
+    }
 }

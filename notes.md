@@ -6,8 +6,15 @@ This is an attempt to compile and publish all my notes. The idea is to post old 
 
 <ul class="notes">
     {%- for post in site.posts -%}
-    <li>
-        <a href="{{ post.url }}">{{ post.title }}</a> 
+    <li class="note">
+        <time datetime="{{ post.date | date_to_xmlschema  }}" itemprop="datePublished">
+            {%- if post.last_modified_at -%}
+                {{ post.last_modified_at | date_to_string }}
+            {%- else -%}
+                {{ post.date | date_to_string  }}
+            {%- endif -%}
+        </time>
+        <a href="{{ post.url }}">{{ post.title | escape }}</a> 
     </li>
     {%- endfor -%}
 </ul>
