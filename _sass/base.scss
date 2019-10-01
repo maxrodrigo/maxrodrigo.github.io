@@ -60,6 +60,7 @@ header[role=main]{
             margin:$default-spacing/2 0;
         }
     }
+
     input[type="checkbox"]#toggle-menu,
     label[for="toggle-menu"]{ display:none; }
     label[for="toggle-menu"]{
@@ -98,7 +99,22 @@ header[role=main]{
     }
 }
 
-.footnotes{
+blockquote, .callout {
+    margin: $default-spacing 0;
+    padding: $default-spacing/4;
+    padding-left: $default-spacing/2;
+    border-left: $default-spacing/4 solid $dark-color;
+}
+
+.callout {
+    border-color: $highlight;
+}
+
+blockquote {
+    margin-left: $default-spacing;
+}
+
+.footnotes {
     border-top: solid $dark-color thin;
     margin-top: $default-spacing*2;
     color: $light-font-color;
