@@ -1,9 +1,9 @@
 body{
+    background-color: $background-color;
+    color: $font-color;
     font-family: $font-face;
     font-size: $font-size;
     line-height: $default-spacing;
-    color: $font-color;
-    background-color:$color;
 }
 
 a {
@@ -12,30 +12,28 @@ a {
 
     &:hover { text-decoration: underline }
     &:link,
-    &:active {
-        color: $link-visited-color;
-    }
+    &:active { color: $link-visited-color; }
 
     &[target=_blank]::after{
+        background-image: url(/assets/images/external_link_icon.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
         content: '(external link)';
         display: inline-block;
-        width: $font-size;
         height: $font-size;
+        margin-left: .1em;
+        overflow: hidden;
         text-indent: $font-size;
         white-space: nowrap;
-        overflow: hidden;
-        background-image: url(/assets/images/external_link_icon.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
-        margin-left: .1em;
+        width: $font-size;
     }
 }
 
 :target {
-    background: $highlight;
+    background: $highlight; 
+    padding: 0.3em;
 }
-
 
 pre {
     white-space: pre-wrap; //css3
@@ -44,37 +42,49 @@ pre {
     white-space: -o-pre-wrap; //opera 7
     word-wrap: break-word; //internet explorer
 
-    &.highlight{
-        padding: $default-spacing;
-    }
+    &.highlight{ padding: $default-spacing / 2; }
+}
+
+code { 
+    background-color: $grey;
+    padding: 0.3em;
 }
 
 header[role=main]{
-    margin-right: $default-spacing * 2;
-    min-width: $default-spacing * 10;
+    margin-right: $default-spacing;
+    min-width: $default-spacing * 8;
 
-    h1{ font-size:$font-size*2; }
+    h1{ font-size:$font-size * 2; }
+
     nav ul{
         padding-left:$default-spacing;
-        li p{
-            margin:$default-spacing/2 0;
-        }
+
+        li p{ margin:$default-spacing/2 0; }
     }
 
     input[type="checkbox"]#toggle-menu,
     label[for="toggle-menu"]{ display:none; }
+
     label[for="toggle-menu"]{
-        width:$font-size;
-        margin-top: $default-spacing;
         cursor: pointer;
+        margin-top: $default-spacing;
+        width:$font-size;
     }
 }
 
 #container{
-    margin:0 $default-spacing;
     display:flex;
     justify-content:start;
+    margin:0 $default-spacing;
 }
+
+.footnotes {
+    border-top: solid $dark-grey thin;
+    color: $light-font-color;
+    margin-top: $default-spacing*2;
+}
+
+// Bookshelf
 
 .bookshelf{
     padding: 0;
@@ -90,8 +100,8 @@ header[role=main]{
 
 .book {
     img {
-        width:60px;
         vertical-align:top;
+        width:60px;
     }
     p {
         display:inline-block;
@@ -99,47 +109,60 @@ header[role=main]{
     }
 }
 
+// Posts
+
 blockquote, .callout {
-    margin: $default-spacing 0;
-    padding: $default-spacing/4;
-    padding-left: $default-spacing/2;
-    border-left: $default-spacing/4 solid $dark-color;
+    background-color: $grey;
+    border-radius: $default-radius;
+    margin: 0;
+    padding: $default-spacing / 2;
+
+    p { margin:0 }
 }
 
-.callout {
-    border-color: $highlight;
+.callout { background-color: $highlight; }
+
+.toc {
+    list-style-position: inside;
+    padding: 0;
 }
 
-blockquote {
-    margin-left: $default-spacing;
+// Labels
+
+.label {
+    background-color: $highlight;
+    border-radius: $default-radius;
+    display: inline-block;
+    margin-right: 0.3em;
+    padding: 0.3em;
 }
 
-.footnotes {
-    border-top: solid $dark-color thin;
-    margin-top: $default-spacing*2;
-    color: $light-font-color;
-}
+.grey-bg { background-color: $grey; }
+.blue-bg { background-color: $blue; }
+.red-bg { background-color: $red; }
+.green-bg { background-color: $green; }
+.highlight { background-color: $highlight; }
 
 @media only screen and (max-width: 480px) {
     header[role=main]{
+
         h1{
             display:inline-block;
             margin-bottom: 0;
         }
+
         label[for="toggle-menu"]{
             display:block;
             float: left;
             margin-right: $default-spacing;
-            &:before{
-                content: $closed-menu-content;
-            }
+
+            &:before{ content: $closed-menu-content; }
         }
         nav{
+            border-bottom: solid $dark-grey thin;
             display:none;
-            border-bottom: solid $dark-color thin;
-            & > ul{
-                margin-top:0;
-            }
+
+            & > ul{ margin-top:0; }
         }
 
         input[type="checkbox"]#toggle-menu:checked ~ label:before{ content:$opened-menu-content; }
@@ -147,17 +170,13 @@ blockquote {
     }
 
     header[role=main]{
-        margin-right:0;
         margin-bottom: $default-spacing;
+        margin-right:0;
     }
 
-    #container{
-        flex-direction: column;
-    }
+    #container{ flex-direction: column; }
 
     main{
-        h1{
-            font-size:$font-size*2;
-        }
+        h1{ font-size:$font-size * 2; }
     }
 }

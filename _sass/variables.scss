@@ -14,26 +14,35 @@
 }
 
 // Font
+
 $font-size: 0.8em;
 $font-face: "Inconsolata", monospace;
 
-// Spacing
+// Units
+
 $default-spacing: 1.3em;
+$default-radius: 0.3em;
 
 // Colors
-$color: #fafafa;
-$dark-color: darken( $color, 20% );
-$light-color: lighten( $color, 20% );
+
+$background-color: #fcfcfc;
 
 $font-color: #333;
-$dark-font-color: darken( $font-color, 30% );
 $light-font-color: lighten( $font-color, 30% );
 
 $link-color: #00e;
 $link-visited-color: #1a0dab;
 
-$highlight: #fdce93;
+$grey: #eff0f1;
+$dark-grey: darken( #efefef, 20% );
+
+$blue: #74bdcb;
+$red: #ffa384;
+$green: #b5e5cf;
+
+$highlight: #efe7bc;
 
 // Content
+
 $closed-menu-content: "\2630";
 $opened-menu-content: "\268C";
