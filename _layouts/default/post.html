@@ -14,4 +14,9 @@ layout: default
     {%- endif -%}
 </p>
 
+
+{%- if page.toc -%}
+{% include toc.html html=content sanitize=true class="toc" %}
+{%- endif -%}
+
 {{ content }}
