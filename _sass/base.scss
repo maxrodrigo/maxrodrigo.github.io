@@ -93,19 +93,19 @@ header[role=main]{
         list-style:none;
         margin-bottom: $default-spacing;
 
-        .title{ font-weight:bold; }
+        img {
+            vertical-align:top;
+            width:60px;
+        }
+        p {
+            display:inline-block;
+            width: calc( 100% - 70px);
+        }
+        .title {
+            display:block;
+            font-weight:bold;
+        }
         .author{ display:block; }
-    }
-}
-
-.book {
-    img {
-        vertical-align:top;
-        width:60px;
-    }
-    p {
-        display:inline-block;
-        width: calc( 100% - 70px)
     }
 }
 

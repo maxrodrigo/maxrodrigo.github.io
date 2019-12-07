@@ -41,8 +41,15 @@ talks:
   -
     title: "SOLID Principles of Object Oriented & Agile Design"
     author: "Robert \"Uncle Bob\" Martin"
+    year: 2014
     url: "https://youtu.be/QHnLmvDxGTY"
   -
     title: "Tech Talk: Linus Torvalds on git"
     author: "Linus Torvalds"
     url: "https://youtu.be/4XpnKHJAok8"
+
+
+others:
+  -
+    title: "Open Security Training"
+    url: "http://opensecuritytraining.info/Welcome.html"

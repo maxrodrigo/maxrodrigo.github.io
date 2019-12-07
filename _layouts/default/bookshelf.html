@@ -4,37 +4,32 @@ layout: default
 
 {{ content }}
 
-<h2>Books</h2>
-<ul class="bookshelf">
-{%- for book in site.data.bookshelf.books -%}
-    <li class="book">
-        <img src="{{ book.cover }}" alt="'{{ book.title }}' book cover">
-        <p>
-            <span class="title">{{ book.title }} ({{ book.year }})</span>
-            <span class="author">by {{ book.author }}</span>
-        </p>
-    </li>
-{%- endfor -%}
-</ul>
+{%- for shelf in site.data.bookshelf -%}
+  <h2>{{ shelf[0] | capitalize }}</h2>
 
-<h2>Publications</h2>
-<ul class="bookshelf">
-{%- for publication in site.data.bookshelf.publications -%}
-    <li class="publication">
-        <span class="title">{{ publication.title }}</span>
-        <span class="author">{{ publication.author }}</span>
-        <a href="{{ publication.url }}" target="_blank">{{ publication.url }}</a>
-    </li>
-{%- endfor -%}
-</ul>
+  <ul class="bookshelf">
+  {%- for book in shelf[1] -%}
+      <li class="book">
+          {% if book.cover %}
+          <img src="{{ book.cover }}" alt="'{{ book.title }}' book cover">
+          {% endif %}
+          <p>
+              <span class="title">
+                {{ book.title }} 
+                {%- if book.year -%}
+                ({{ book.year }})
+                {%- endif -%}
+              </span>
 
-<h2>Talks</h2>
-<ul class="bookshelf">
-{%- for talk in site.data.bookshelf.talks -%}
-    <li class="talk">
-        <span class="title">{{ talk.title }}</span>
-        <span class="author">{{ talk.author }}</span>
-        <a href="{{ talk.url }}" target="_blank">{{ talk.url }}</a>
-    </li>
+              {%- if book.author -%}
+              <span class="author">by {{ book.author }}</span>
+              {%- endif -%}
+
+              {%- if book.url -%}
+              <a href="{{ book.url }}" target="_blank">{{ book.url }}</a>
+              {%- endif -%}
+          </p>
+      </li>
+  {%- endfor -%}
+  </ul>
 {%- endfor -%}
-</ul>
