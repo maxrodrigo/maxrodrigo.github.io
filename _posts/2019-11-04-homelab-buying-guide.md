@@ -1,6 +1,25 @@
 ---
 toc: true
+last_modified_at: 2020-02-19 19:28:18+010
 ---
+
+# Things I wish I'd known
+
+## It is Expensive!
+
+It is an expensive hobby and it does not end when you get a server.  
+For multiple servers you will need switching; if you have many cables, a patch panel will be necessary and probably a router. Covers, trays, cable managers, PDUs, UPSs, and the list goes on and on.  
+Electricity is something to consider too and there are many factors involved: usage, UPSs, power redundancy, your "Power Mode" configuration, etc.
+Evaluate your needs and how is it going to scale over time.
+
+## Environment
+
+Noise, heat and dust is not something to be ignored. If you go on reddit you will find tons of jokes about that, but we all know it is a real issue. If you can't have a dedicated space for the rack and/or the servers consider other options.
+
+## Size
+
+Through out these years I had a couple of racks, from the Ikea table to a 29U full size rack. Choose the one for the units you currently need plus a couple more just in case, remember, it never ends.  
+I particularly find small ones pretty handy, they are easier to keep consolidated and in case you need a monitor you can put it on top avoiding buying a rackmount KVM or using 6+ units and/or a shelf.
 
 # Brands and Models
 
