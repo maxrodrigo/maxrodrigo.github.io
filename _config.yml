@@ -1,5 +1,5 @@
 title: "Max Rodrigo"
-description: "Maximiliano Rodrigo Software Engineer currently working on Cloud Architecture, Python and Go."
+description: "Software Engineer, Cloud Architecture, Security Researcher."
 author: "Maximiliano Rodrigo"
 email: "contact@maxrodrigo.com"
 url: "https://www.maxrodrigo.com"
@@ -14,24 +14,18 @@ collections:
       output: true
 
 defaults:
-    - 
+    -
       scope:
         path: ""
         type: "pages"
       values:
         layout: "default"
-    - 
+    -
       scope:
         path: ""
         type: "posts"
       values:
         layout: "default/post"
-    - 
-      scope:
-        type: "slides"
-      values:
-        layout: "slide"
-        target: "blank"
 
 sass:
     style: compressed

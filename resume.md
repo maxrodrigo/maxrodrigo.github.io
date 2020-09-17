@@ -1,7 +1,6 @@
 ---
 title: Luis Maximiliano Rodrigo Zubieta - Curriculum Vitae
 layout: resume
-show_in_menu: false
 ---
 # Luis Maximiliano Rodrigo Zubieta
 
@@ -15,9 +14,9 @@ show_in_menu: false
 
 ## Summary
 
-I’m a passionate software engineer with significant experience in Python, PHP and system administration.  
-Over the past sixteen years, I’ve been a developer, a teacher, a consultant, and a team lead. I’ve done developing and consulting for top companies, hospitals, and universities.  
-Although Python is my current language of choice, I also have significant experience with C, PHP, and Javascript. I also have a strong background in system administration and architecture.  
+I’m a passionate software engineer with significant experience in Python, PHP and system administration.
+Over the past sixteen years, I’ve been a developer, a teacher, a consultant, and a team lead. I’ve done developing and consulting for top companies, hospitals, and universities.
+Although Python is my current language of choice, I also have significant experience with C, PHP, and Javascript. I also have a strong background in system administration and architecture.
 I’m self-disciplined, fast learner and I truly believe everything can be done.
 
 
@@ -44,7 +43,7 @@ I’m self-disciplined, fast learner and I truly believe everything can be done.
 
 ## Professional Experience
 
-__Cloud Architect / Backend Engineer__  
+__Cloud Architect / Backend Engineer__
 LoveToKnowMedia Spain - Yourdictionary.com
 <span class="date">(September 2017 - )</span>
 
@@ -70,20 +69,20 @@ Python Backend Engineer and Cloud Architecture. Serverless applications, process
   - Monitoring tools.
   - Create personal and helped on Tech Teams OKRs.
 
-__Technical Lead__  
+__Technical Lead__
 Searches
 <span class="date">(March 2014 - February 2017)</span>
 
 - Re engineering of legacy Affiliate Program Software used by more than 3+ million affiliates.
 - Database Administration - High Availability, Load Balancing, and Replication of massive databases mostly MySQL and PostgreSQL.
-- Coding and optimization of report scripts and queries.  
+- Coding and optimization of report scripts and queries.
   Developed responsive, interactive visualizations using D3.js
 - CNP Processing (Card-not-Present Transactions) - Merchant accounts integration. Charge-back Forecasting & Analysis with Python.
 - PHP - Migration, maintenance and optimization on more than 100 websites using Zend, vBulletin, phpBB, Wordpress, Joomla, TGPs and custom scripts.
 - Python - Re-coding and re-implementation of legacy code in PHP, Pascal and C. Data Analysis, Marketing Automation, Billing Software, CMS development.
 
 
-__Co-Founder - CTO__  
+__Co-Founder - CTO__
 Nerdogs.com
 <span class="date">(October 2007 - July 2012)</span>
 
@@ -95,22 +94,22 @@ Nerdogs.com
   - Wordpress plugins and themes.
   - Web scrapers / crawlers.
   - Twitter / Facebook bots.
-  
-__Developer - Server Architecture__  
+
+__Developer - Server Architecture__
 Leechpack
 <span class="date">(July 2009 - May 2010)</span>
 
 Leechpack was a SaaS that allowed users to download files from Torrent or File Sharing websites to the cloud. Once on the platform, files could be downloaded to the local drive or streamed directly to their browser.
 
 - Full stack development of the File Sharing System.
-- Development of the downloader software for File Sharing websites:  
+- Development of the downloader software for File Sharing websites:
   Rapidshare, Depositfile, Uploadbox, Megaupload, Bigandfree, Netload, Storage.to, Hotfile, Uploaded.to and many more.
 - Design and implementation of the on-demand streaming service.
 - Red5 Media Server implementation.
 - Torrent Servers Implementation.
 - Implementation of the CVS server.
 
-__PHP Developer__  
+__PHP Developer__
 B18
 <span class="date">(February 2007 - November 2009)</span>
 
@@ -120,11 +119,11 @@ B18
 - Extensive development for Wordpress, Joomla, Drupal and others CMSs.
 - Frontend development.
 
-__Windows System Administrator / Teaching Assistant__  
+__Windows System Administrator / Teaching Assistant__
 Colegio Nacional Dr. Arturo Umberto Illia
 <span class="date">(2005 - 2006)</span>
 
-__Software Developer__  
+__Software Developer__
 Independent
 <span class="date">(2002 - )</span>
 
@@ -158,27 +157,27 @@ Things I have done and technologies I have worked with:
 
 ## Teaching
 
-__LPIC-1: System Administrator__ (2018)  
+__LPIC-1: System Administrator__ (2018)
 Knowtech Training - Barcelona
 
-__Advanced Linux System Administration and Networking__ (2017)  
+__Advanced Linux System Administration and Networking__ (2017)
 Knowtech Training - Barcelona
 
-__Internet Programming Languages__ (2009)  
+__Internet Programming Languages__ (2009)
 Colegio Nacional Dr. Arturo Umberto Illia
 
-__Elementary Computer Architecture and Operating Systems__ (2005 - 2007)  
+__Elementary Computer Architecture and Operating Systems__ (2005 - 2007)
 Colegio Nacional Dr. Arturo Umberto Illia
 
-__Elementary Computer Architecture and Operating Systems__ (2005 - 2006)  
+__Elementary Computer Architecture and Operating Systems__ (2005 - 2006)
 Instituto Argentino Modelo
 
 ## Honors and Awards
 
-__Diseño de Sitios Web - 11ra edición de la Maratón Informática Argentina (MIA)__ (August 2002)  
+__Diseño de Sitios Web - 11ra edición de la Maratón Informática Argentina (MIA)__ (August 2002)
 _Universidad Nacional de Mar del Plata_
 
-__Olimpiadas de Informática 2001 Mar del Plata__ (September 2001)  
+__Olimpiadas de Informática 2001 Mar del Plata__ (September 2001)
 _Universidad Nacional de Mar del Plata_
 
 ## References

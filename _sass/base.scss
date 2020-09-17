@@ -31,7 +31,7 @@ a {
 }
 
 :target {
-    background: $highlight; 
+    background: $highlight;
     padding: 0.3em;
 }
 
@@ -45,43 +45,19 @@ pre {
     &.highlight{ padding: $default-spacing / 2; }
 }
 
-code { 
+code {
     background-color: $grey;
     padding: 0.3em;
 }
 
-header[role=main]{
-    margin-right: $default-spacing;
-    min-width: $default-spacing * 8;
-
-    h1{ font-size:$font-size * 2; }
-
-    nav ul{
-        padding-left:$default-spacing;
-
-        li p{ margin:$default-spacing/2 0; }
-    }
-
-    input[type="checkbox"]#toggle-menu,
-    label[for="toggle-menu"]{ display:none; }
-
-    label[for="toggle-menu"]{
-        cursor: pointer;
-        margin-top: $default-spacing;
-        width:$font-size;
-    }
-}
-
 #container{
-    display:flex;
-    justify-content:start;
     margin:0 $default-spacing;
 }
 
 .footnotes {
     border-top: solid $dark-grey thin;
     color: $light-font-color;
-    margin-top: $default-spacing*2;
+    margin-top: $default-spacing * 2;
 }
 
 // Bookshelf

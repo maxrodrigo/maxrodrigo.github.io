@@ -10,9 +10,22 @@
     </head>
     <body>
         <div id="container">
-            {%- include header.html -%}
+            <header role="main">
+              {%- if page.url == '/' -%}
+              <h1>Max Rodrigo</h1>
+              {%- else -%}
+              <h1><a href="{{ site.url }}">Max Rodrigo</a></h1>
+              <nav>
+                  <a href="/">~/</a>
+                  <a href="https://github.com/maxrodrigo/">github</a>
+                  <a href="https://www.linkedin.com/in/maxrodrigo/">linkedin</a>
+              </nav>
+              {%- endif -%}
+            </header>
             <main>
-                <h1>{{ page.title }}</h1>
+                {%- if page.title -%}
+                  <h1>{{ page.title }}</h1>
+                {%- endif-%}
                 {{ content }}
             </main>
         </div>
