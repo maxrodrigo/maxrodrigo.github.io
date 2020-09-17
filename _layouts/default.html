@@ -1,3 +1,7 @@
+{%- assign current_page = "post" -%}
+{%- if page.layout != "post" -%}
+  {%- assign current_page = page.name -%}
+{%- endif -%}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,19 +14,20 @@
     </head>
     <body>
         <div id="container">
+              <h2>
+              </h2>
             <header role="main">
               {%- if page.url == '/' -%}
               <h1>Max Rodrigo</h1>
               {%- else -%}
               <h1><a href="{{ site.url }}">Max Rodrigo</a></h1>
               <nav>
-                  <a href="/">~/</a>
-                  <a href="https://github.com/maxrodrigo/">github</a>
-                  <a href="https://www.linkedin.com/in/maxrodrigo/">linkedin</a>
+                  [<a href="/">~/</a>]
+                  [<a href="https://github.com/maxrodrigo/">github</a>]
               </nav>
               {%- endif -%}
             </header>
-            <main>
+            <main class="{{ current_page | remove: ".md" }}">
                 {%- if page.title -%}
                   <h1>{{ page.title }}</h1>
                 {%- endif-%}

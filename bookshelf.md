@@ -1,8 +1,21 @@
 ---
 title: Bookshelf
-description: Books, talks and other resources I consider a cornerstone for a software engineer.
-layout: default/bookshelf
+description: Books, talks and other resources I consider noteworthy.
 ---
 
-Some of the books and videos I consider a cornerstone of my knowledge.  
-Is also a good moment to thank all my friends and mentors who helped me in this adventure of learning.
+Some of the books, videos and other resources I consider noteworthy.
+
+Is also a good place to thank all my friends and mentors who helped me in this adventure of learning.
+
+{%- for shelf in site.data.bookshelf %}
+
+## {{ shelf[0] | capitalize }}
+
+{%- for book in shelf[1] %}
+  - #### {{ book.title }}
+    {% if book.author %}By {{ book.author }}  {% endif %}
+    {% if book.date %}{{ book.date }}  {% endif %}
+    {% if book.url %}[{{ book.url }}](){% endif %}
+{%- endfor -%}
+
+{%- endfor -%}

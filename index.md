@@ -27,5 +27,5 @@ You can reach me at:
 Security-related notes are being moved, and permanently updated, in the [0xffsec Handbook](https://0xffsec.com/handbook).
 
 {%- for post in site.posts %}
-- {{ post.date | date_to_string: "ordinal", "US" }} [{{ post.title | escape }}]({{ post.url }})
+- {{ post.date | date: "%Y-%m-%d" }} [{{ post.title | escape }}]({{ post.url }})
 {%- endfor -%}

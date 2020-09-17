@@ -10,22 +10,13 @@ exclude: [ "script/", "Gemfile", "Gemfile.lock", "LICENSE" ]
 collections:
     posts:
       permalink: /notes/:title.html
-    slides:
-      output: true
 
 defaults:
     -
       scope:
-        path: ""
-        type: "pages"
-      values:
-        layout: "default"
-    -
-      scope:
-        path: ""
         type: "posts"
       values:
-        layout: "default/post"
+        layout: "post"
 
 sass:
     style: compressed

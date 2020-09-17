@@ -4,7 +4,10 @@ body{
     font-family: $font-face;
     font-size: $font-size;
     line-height: $default-spacing;
+    padding: 0 $default-spacing;
 }
+
+:target { background: $highlight; }
 
 a {
     color: $link-color;
@@ -13,46 +16,9 @@ a {
     &:hover { text-decoration: underline }
     &:link,
     &:active { color: $link-visited-color; }
-
-    &[target=_blank]::after{
-        background-image: url(/assets/images/external_link_icon.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        content: '(external link)';
-        display: inline-block;
-        height: $font-size;
-        margin-left: .1em;
-        overflow: hidden;
-        text-indent: $font-size;
-        white-space: nowrap;
-        width: $font-size;
-    }
 }
 
-:target {
-    background: $highlight;
-    padding: 0.3em;
-}
-
-pre {
-    white-space: pre-wrap; //css3
-    white-space: moz-pre-wrap; //firefox
-    white-space: -pre-wrap; //opera 4-6
-    white-space: -o-pre-wrap; //opera 7
-    word-wrap: break-word; //internet explorer
-
-    &.highlight{ padding: $default-spacing / 2; }
-}
-
-code {
-    background-color: $grey;
-    padding: 0.3em;
-}
-
-#container{
-    margin:0 $default-spacing;
-}
+img { max-width: 100%; }
 
 .footnotes {
     border-top: solid $dark-grey thin;
@@ -60,49 +26,25 @@ code {
     margin-top: $default-spacing * 2;
 }
 
-// Bookshelf
-
 .bookshelf{
-    padding: 0;
-
-    li{
-        list-style:none;
-        margin-bottom: $default-spacing;
-
-        img {
-            vertical-align:top;
-            width:60px;
-        }
-        p {
-            display:inline-block;
-            width: calc( 100% - 70px);
-        }
-        .title {
-            display:block;
-            font-weight:bold;
-        }
-        .author{ display:block; }
-    }
+  h4 {
+    margin-bottom:0;
+    line-height:0;
+  }
 }
 
-// Posts
-
 blockquote {
-    background: $grey;
     border-left-color: $dark-grey;
     border-left-style: solid;
-    margin-left: $default-spacing * 2;
+    margin-left: $default-spacing;
     padding-left: $default-spacing;
-    padding: $default-spacing $default-spacing;
 }
 
 .toc {
     list-style-position: inside;
     padding: 0;
-    margin-bottom: $default-spacing * 2;
+    margin-bottom: $default-spacing;
 }
-
-// Labels
 
 .label {
     background-color: $highlight;
@@ -117,41 +59,3 @@ blockquote {
 .red-bg { background-color: $red; }
 .green-bg { background-color: $green; }
 .highlight { background-color: $highlight; }
-
-@media only screen and (max-width: 480px) {
-    header[role=main]{
-
-        h1{
-            display:inline-block;
-            margin-bottom: 0;
-        }
-
-        label[for="toggle-menu"]{
-            display:block;
-            float: left;
-            margin-right: $default-spacing;
-
-            &:before{ content: $closed-menu-content; }
-        }
-        nav{
-            border-bottom: solid $dark-grey thin;
-            display:none;
-
-            & > ul{ margin-top:0; }
-        }
-
-        input[type="checkbox"]#toggle-menu:checked ~ label:before{ content:$opened-menu-content; }
-        input[type="checkbox"]#toggle-menu:checked ~ nav{ display:block; }
-    }
-
-    header[role=main]{
-        margin-bottom: $default-spacing;
-        margin-right:0;
-    }
-
-    #container{ flex-direction: column; }
-
-    main{
-        h1{ font-size:$font-size * 2; }
-    }
-}

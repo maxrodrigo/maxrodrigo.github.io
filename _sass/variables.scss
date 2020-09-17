@@ -13,17 +13,14 @@
 }
 
 // Font
-
-$font-size: 0.8em;
+$font-size: 0.8rem;
 $font-face: "Meslo LG", sfmono-regular,source code pro,Hack,Consolas,liberation mono,Menlo,Courier,monospace;
 
 // Units
-
 $default-spacing: 1.4em;
 $default-radius: 0.3em;
 
 // Colors
-
 $background-color: #fcfcfc;
 
 $font-color: #333;
@@ -40,8 +37,3 @@ $red: #ffa384;
 $green: #b5e5cf;
 
 $highlight: #efe7bc;
-
-// Content
-
-$closed-menu-content: "\2630";
-$opened-menu-content: "\268C";
