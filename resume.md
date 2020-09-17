@@ -15,7 +15,7 @@ layout: resume
 ## Summary
 
 I’m a passionate software engineer with significant experience in Python, PHP and system administration.
-Over the past sixteen years, I’ve been a developer, a teacher, a consultant, and a team lead. I’ve done developing and consulting for top companies, hospitals, and universities.
+Over the past eighteen years, I have been a developer, a teacher, a consultant, and a team lead. I’ve done developing and consulting for top companies, hospitals, and universities.
 Although Python is my current language of choice, I also have significant experience with C, PHP, and Javascript. I also have a strong background in system administration and architecture.
 I’m self-disciplined, fast learner and I truly believe everything can be done.
 

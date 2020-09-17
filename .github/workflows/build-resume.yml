@@ -1,4 +1,4 @@
-mame: Build Resume
+name: Build Resume
 on:
   push:
     branches: [ master ]
