@@ -53,3 +53,6 @@ others:
   -
     title: "Open Security Training"
     url: "http://opensecuritytraining.info/Welcome.html"
+  -
+    title: "Semantic Linefeed"
+    url: "https://rhodesmill.org/brandon/2012/one-sentence-per-line/"
