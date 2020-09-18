@@ -1,4 +1,7 @@
 ---
+redirect_from:
+  - about
+  - notes
 ---
 {%- assign birthdate = 491141100 -%}
 
