@@ -8,17 +8,16 @@ layout: resume
 |Date of birth | July 25, 1985 |
 |Nationality | Argentina / Spain |
 |Languages | Spanish / English |
-|Email | [contact@maxrodrigo.com](mailto:contact@maxrodrigo.com) / [rodrigo.maxi@gmail.com](mailto:rodrigo.maxi@gmail.com) |
+|Email | [contact@maxrodrigo.com](mailto:contact@maxrodrigo.com) |
 |Website | [www.maxrodrigo.com](https://www.maxrodrigo.com) |
 |LinkedIn | [/in/maxrodrigo/](https://www.linkedin.com/in/maxrodrigo/) |
 
 ## Summary
 
-I’m a passionate software engineer with significant experience in Python, PHP and system administration.
-Over the past eighteen years, I have been a developer, a teacher, a consultant, and a team lead. I’ve done developing and consulting for top companies, hospitals, and universities.
-Although Python is my current language of choice, I also have significant experience with C, PHP, and Javascript. I also have a strong background in system administration and architecture.
-I’m self-disciplined, fast learner and I truly believe everything can be done.
-
+I’m a passionate software engineer with broad experience in software development and system administration.
+Over the past eighteen years, I've been a software engineer, a teacher, a consultant, and a team lead. I’ve done developing and consulting for top companies, hospitals, and universities.
+Although Python is my current language of choice, I also have significant experience with C, PHP, and Javascript. I also have a strong background in system administration, cloud architecture, and security.
+I’m a self-disciplined, fast learner, and a true believer that everything can be done.
 
 ### TECHNICAL STRENGTHS
 

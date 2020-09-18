@@ -2,7 +2,7 @@ name: Build Resume
 on:
   push:
     branches: [ master ]
-    paths: 
+    paths:
       - resume.md
 
 jobs:
@@ -10,9 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        
+
       - name: Install wkhtmltopdf
         run: sudo apt install wkhtmltopdf
-        
-      - name: Run Script
-        run: echo New Resume.
+
+      - name: Render HTML to PDF
+        run: ./script/build_resume.sh
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: resume
+          path: '*.pdf'
