@@ -23,11 +23,13 @@ You can reach me at:
 ## Things
 
 - [0xffsec](https://0xffsec.com)
+- [μz](https://github.com/maxrodrigo/uz) -  A zsh micro plugin manager
+- [tmux-nordvpn](https://github.com/maxrodrigo/tmux-nordvpn) - NordVPN Tmux Plugin
 - [Bookshelf](bookshelf.md)
 
 ## Notes
 
-Security-related notes are being moved, and permanently updated, in the [0xffsec Handbook](https://0xffsec.com/handbook).
+Security-related notes are being moved, to the [0xffsec Handbook](https://0xffsec.com/handbook).
 
 {%- for post in site.posts %}
 - {{ post.date | date: "%Y-%m-%d" }} [{{ post.title | escape }}]({{ post.url }})
