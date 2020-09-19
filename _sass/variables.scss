@@ -13,27 +13,22 @@
 }
 
 // Font
-$font-size: 0.8rem;
-$font-face: "Meslo LG", sfmono-regular,source code pro,Hack,Consolas,liberation mono,Menlo,Courier,monospace;
+$font-size: 0.9rem;
+$font-family: "Meslo LG", sfmono-regular,source code pro,Hack,Consolas,liberation mono,Menlo,Courier,monospace;
 
 // Units
-$default-spacing: 1.4em;
+$default-spacing: 1.5em;
 $default-radius: 0.3em;
 
 // Colors
-$background-color: #fcfcfc;
+$code-background-color: #f6f8fa;
 
-$font-color: #333;
-$light-font-color: lighten( $font-color, 30% );
+$color: #222;
+$light-color: lighten( $color, 25% );
 
 $link-color: #00e;
 $link-visited-color: #1a0dab;
 
-$grey: #eff0f1;
-$dark-grey: darken( #efefef, 20% );
-
-$blue: #74bdcb;
-$red: #ffa384;
-$green: #b5e5cf;
+$grey: #ddd;
 
 $highlight: #efe7bc;

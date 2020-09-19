@@ -1,41 +1,51 @@
-body{
-    background-color: $background-color;
-    color: $font-color;
-    font-family: $font-face;
-    font-size: $font-size;
-    line-height: $default-spacing;
-    padding: 0 $default-spacing;
+html { scroll-behavior: smooth; }
+
+body {
+  color: $color;
+  font-size: $font-size;
+  font-family: $font-family;
+  line-height: $default-spacing;
+  padding: 0 $default-spacing;
 }
 
 :target { background: $highlight; }
 
 a {
-    color: $link-color;
-    text-decoration: none;
+  color: $link-color;
+  text-decoration: none;
 
-    &:hover { text-decoration: underline }
-    &:link,
-    &:active { color: $link-visited-color; }
+  &:hover { text-decoration: underline }
+  &:link,
+  &:active { color: $link-visited-color; }
 }
 
 img { max-width: 100%; }
 
-.footnotes {
-    border-top: solid $dark-grey thin;
-    color: $light-font-color;
-    margin-top: $default-spacing * 2;
+blockquote {
+  margin:0;
+  border-left: 4px solid $grey;
+  padding: 0 $default-spacing;
+  color: $light-color;
 }
 
-.bookshelf{
+.highlight pre {
+  border: 0;
+  background-color: $code-background-color;
+}
+
+.footnotes {
+  border-top: solid $grey thin;
+  color: $light-color;
+  margin-top: $default-spacing * 2;
+
+  li p {
+    margin: 0.3rem;
+  }
+}
+
+.bookshelf {
   h4 {
     margin-bottom:0;
     line-height:0;
   }
-}
-
-blockquote {
-    border-left-color: $dark-grey;
-    border-left-style: solid;
-    margin-left: $default-spacing;
-    padding-left: $default-spacing;
 }

@@ -5,10 +5,10 @@ redirect_from:
 ---
 {%- assign birthdate = 491141100 -%}
 
-Hi there :wave:, my name is Max. I'm a {{ 'now' | date: "%s" | minus: birthdate | divided_by: 31557600 | floor }}[^birthdate] years old Software Engineer based in ~~[Buenos Aires]( https://www.google.com.ar/maps/place/Buenos+Aires/ )~~  ~~[Madrid]( https://www.google.com.ar/maps/place/Madrid/ )~~  ~~[Minneapolis]( https://www.google.com.ar/maps/place/Minneapolis/ )~~ [Barcelona]( https://www.google.com.ar/maps/place/Barcelona/ ).
+Hi there, my name is Max. I'm a {{ 'now' | date: "%s" | minus: birthdate | divided_by: 31557600 | floor }}[^birthdate] years old Software Engineer based in ~~[Buenos Aires]( https://www.google.com.ar/maps/place/Buenos+Aires/ )~~  ~~[Madrid]( https://www.google.com.ar/maps/place/Madrid/ )~~  ~~[Minneapolis]( https://www.google.com.ar/maps/place/Minneapolis/ )~~ [Barcelona]( https://www.google.com.ar/maps/place/Barcelona/ ).
 I am currently working as a Senior Backend Engineer specialized in Python and Cloud Architecture.
 
-Curriculum Vitae: [ [PDF Version]( /assets/pdf/Luis_Maximiliano_Rodrigo_Zubieta_Resume.pdf ) ]  [ [ HTML Version]( resume.html ) ]
+Curriculum Vitae: [[PDF](/assets/pdf/Luis_Maximiliano_Rodrigo_Zubieta_Resume.pdf)][[HTML](resume.html)]
 
 You can reach me at:
 - [{{ site.email }}]( mailto:{{ site.email }} ) [[Public key]( gpg.html )][^xkcd]
