@@ -39,23 +39,3 @@ blockquote {
     margin-left: $default-spacing;
     padding-left: $default-spacing;
 }
-
-.toc {
-    list-style-position: inside;
-    padding: 0;
-    margin-bottom: $default-spacing;
-}
-
-.label {
-    background-color: $highlight;
-    border-radius: $default-radius;
-    display: inline-block;
-    margin-right: 0.3em;
-    padding: 0.3em;
-}
-
-.grey-bg { background-color: $grey; }
-.blue-bg { background-color: $blue; }
-.red-bg { background-color: $red; }
-.green-bg { background-color: $green; }
-.highlight { background-color: $highlight; }
