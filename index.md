@@ -29,7 +29,7 @@ You can reach me at:
 
 ## Notes
 
-Security-related notes are being moved, to the [0xffsec Handbook](https://0xffsec.com/handbook).
+Security-related notes are being moved to [0xffsec's Handbook](https://0xffsec.com/handbook).
 
 {%- for post in site.posts %}
 - {{ post.date | date: "%Y-%m-%d" }} [{{ post.title | escape }}]({{ post.url }})
