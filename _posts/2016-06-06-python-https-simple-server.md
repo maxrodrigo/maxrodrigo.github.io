@@ -1,5 +1,5 @@
 ---
-title: Python HTTPS Server with Self Signed Certs
+title: Python HTTPS Simple Server
 last_modified_at: 2020-10-02 12:02:27+0200
 ---
 
