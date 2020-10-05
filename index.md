@@ -22,9 +22,10 @@ You can reach me at:
 
 ## Things
 
-- [0xffsec](https://0xffsec.com)
+- [0xffsec's Handbook](https://0xffsec.com/handbook)
 - [μz](https://github.com/maxrodrigo/uz) -  A zsh micro plugin manager
-- [tmux-nordvpn](https://github.com/maxrodrigo/tmux-nordvpn) - NordVPN Tmux Plugin
+- [NordVPN Tmux Plugin](https://github.com/maxrodrigo/tmux-nordvpn)
+- [λ AWS Lambdas@Edge A/B Testing ](https://github.com/maxrodrigo/ab-testing-lambdas)
 - [Bookshelf](bookshelf.md)
 
 ## Notes
