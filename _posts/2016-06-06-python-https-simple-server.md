@@ -32,7 +32,7 @@ using the `-m` switch of the interpreter.
 python3 -m http.server 8000
 ```
 
-Or within a script, for additional configuration.
+Or imported as a module, for additional configuration.
 
 ```python
 #!/usr/bin/env python
@@ -86,13 +86,13 @@ httpd.serve_forever()
 
 ## Python 2
 
-### Command line invocation
+### Interpreter Module Invocation
 
 ```sh
 python -m SimpleHTTPServer 8000
 ```
 
-### HTTP Server
+### Imported Module - HTTP Server
 
 ```python
 #!/usr/bin/env python
@@ -111,7 +111,7 @@ print "serving at port", PORT
 httpd.serve_forever()
 ```
 
-### HTTPS Server
+### Imported Module - HTTPS Server
 
 ```python
 #!/usr/bin/env python
