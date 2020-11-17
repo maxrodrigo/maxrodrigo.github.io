@@ -15,17 +15,6 @@
   }
 }
 
-@media screen{
-  body{
-    margin:5em;
-  }
-}
-@media print{
-  body{
-    font-size:0.8em;
-  }
-}
-
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 12pt;
@@ -61,3 +50,14 @@ td:nth-child(2n + 1) {
   padding-right: 1em;
 }
 .date{ float:right; }
+
+@media screen{
+  body{
+    margin:5em;
+  }
+}
+@media print{
+  body{
+    font-size:0.9em;
+  }
+}
