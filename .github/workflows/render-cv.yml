@@ -8,7 +8,9 @@ on:
 
 jobs:
   render-cv:
-    runs-on: ubuntu-latest
+    env:
+      PDF_FILE: ./assets/pdf/Luis_Maximiliano_Rodrigo_Zubieta_CV.pdf
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
 
@@ -35,14 +37,13 @@ jobs:
       - name: Render PDF
         run: |
           . ./venv/bin/activate
-          weasyprint ./_site/cv.html ./assets/pdf/Luis_Maximiliano_Rodrigo_Zubieta_CV.pdf
-
+          weasyprint ./_site/cv.html ${{env.PDF_FILE}}
       - uses: actions/upload-artifact@v2
         with:
           name: curriculum-vitae
-          path: '*.pdf'
+          path: ${{env.PDF_FILE}}
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Commit new CV
-          file_pattern: ./assets/pdf/Luis_Maximiliano_Rodrigo_Zubieta_CV.pdf
+          file_pattern: ${{env.PDF_FILE}}
