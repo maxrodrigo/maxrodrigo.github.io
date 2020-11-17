@@ -1,7 +1,10 @@
-name: Build and render cv into a PDF file.
+name: Render CV into a PDF file.
 on:
   push:
     branches: [ master ]
+    paths:
+      - cv.md
+      - assets/css/cv.scss
 
 jobs:
   render-cv:
