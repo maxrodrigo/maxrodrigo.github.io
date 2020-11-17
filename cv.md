@@ -14,6 +14,7 @@ redirect_from:
 |Email | [contact@maxrodrigo.com](mailto:contact@maxrodrigo.com) |
 |Website | [www.maxrodrigo.com](https://www.maxrodrigo.com) |
 |LinkedIn | [/in/maxrodrigo/](https://www.linkedin.com/in/maxrodrigo/) |
+|Revised | Feb 17, 2019 |
 
 ## Summary
 

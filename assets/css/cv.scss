@@ -1,12 +1,35 @@
 ---
 ---
-
 @import url("modern-normalize.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@page{
+  size: A4;
+  font-family: 'Roboto', sans-serif;
+  font-size:0.8em;
+  color: #333;
+  margin: 2cm;
+
+  @bottom-center {
+   content: "Page " counter(page) " of " counter(pages)
+  }
+}
+
+@media screen{
+  body{
+    margin:5em;
+  }
+}
+@media print{
+  body{
+    font-size:0.9em;
+  }
+}
 
 body{
-  font-family: Helvetica, Arial, Sans-Serif;
-  font-size:10pt;
-  line-height: 1.4em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12pt;
+  line-height: 1.5em;
 }
 a{
   color:black;
@@ -28,9 +51,9 @@ h1{
   margin-bottom:1.5em;
 }
 h2{
-  margin-top:1.2em;
-  padding-bottom: 0.3em;
-  border-bottom:thin solid black;
+  margin-top: 2em;
+  padding-bottom: 0.5em;
+  border-bottom:2px solid #DDD;
 }
 td{ padding:0; }
 td:nth-child(2n + 1) {
@@ -38,17 +61,3 @@ td:nth-child(2n + 1) {
   padding-right: 1em;
 }
 .date{ float:right; }
-
-@media screen{
-  body{
-    margin:5em;
-  }
-}
-@media print{
-  body{
-    margin:0;
-  }
-  h1{
-    line-height:2em;
-  }
-}
