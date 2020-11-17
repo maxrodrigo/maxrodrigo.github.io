@@ -1,6 +1,9 @@
 ---
 title: Luis Maximiliano Rodrigo Zubieta - Curriculum Vitae
-layout: resume
+layout: cv
+redirect_from:
+  - curriculum-vitae
+  - resume
 ---
 # Luis Maximiliano Rodrigo Zubieta
 
@@ -42,7 +45,7 @@ I’m a self-disciplined, fast learner, and a true believer that everything can 
 
 ## Professional Experience
 
-__Cloud Architect / Backend Engineer__
+__Cloud Architect / Backend Engineer__\
 LoveToKnowMedia Spain - Yourdictionary.com
 <span class="date">(September 2017 - )</span>
 
@@ -68,7 +71,7 @@ Python Backend Engineer and Cloud Architecture. Serverless applications, process
   - Monitoring tools.
   - Create personal and helped on Tech Teams OKRs.
 
-__Technical Lead__
+__Technical Lead__\
 Searches
 <span class="date">(March 2014 - February 2017)</span>
 
@@ -81,7 +84,7 @@ Searches
 - Python - Re-coding and re-implementation of legacy code in PHP, Pascal and C. Data Analysis, Marketing Automation, Billing Software, CMS development.
 
 
-__Co-Founder - CTO__
+__Co-Founder - CTO__\
 Nerdogs.com
 <span class="date">(October 2007 - July 2012)</span>
 
@@ -94,7 +97,7 @@ Nerdogs.com
   - Web scrapers / crawlers.
   - Twitter / Facebook bots.
 
-__Developer - Server Architecture__
+__Developer - Server Architecture__\
 Leechpack
 <span class="date">(July 2009 - May 2010)</span>
 
@@ -108,7 +111,7 @@ Leechpack was a SaaS that allowed users to download files from Torrent or File S
 - Torrent Servers Implementation.
 - Implementation of the CVS server.
 
-__PHP Developer__
+__PHP Developer__\
 B18
 <span class="date">(February 2007 - November 2009)</span>
 
@@ -118,11 +121,11 @@ B18
 - Extensive development for Wordpress, Joomla, Drupal and others CMSs.
 - Frontend development.
 
-__Windows System Administrator / Teaching Assistant__
+__Windows System Administrator / Teaching Assistant__\
 Colegio Nacional Dr. Arturo Umberto Illia
 <span class="date">(2005 - 2006)</span>
 
-__Software Developer__
+__Software Developer__\
 Independent
 <span class="date">(2002 - )</span>
 
