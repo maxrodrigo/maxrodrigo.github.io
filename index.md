@@ -5,8 +5,8 @@ redirect_from:
 ---
 {%- assign birthdate = 491141100 -%}
 
-Hi there, my name is Max. I'm a {{ 'now' | date: "%s" | minus: birthdate | divided_by: 31557600 | floor }}[^birthdate] years old Software Engineer based in ~~[Buenos Aires]( https://www.google.com.ar/maps/place/Buenos+Aires/ )~~  ~~[Madrid]( https://www.google.com.ar/maps/place/Madrid/ )~~  ~~[Minneapolis]( https://www.google.com.ar/maps/place/Minneapolis/ )~~ [Barcelona]( https://www.google.com.ar/maps/place/Barcelona/ ).
-I am currently working as a Senior Engineer specialized in Python and Cloud Architecture. I'm also writing an open source [book](https://0xffsec.com/handbook) on penetration testing.
+Hi there, my name is Max. I'm a {{ 'now' | date: "%s" | minus: birthdate | divided_by: 31557600 | floor }}[^birthdate] years old Senior Cloud Architect based in ~~[Buenos Aires]( https://www.google.com.ar/maps/place/Buenos+Aires/ )~~  ~~[Madrid]( https://www.google.com.ar/maps/place/Madrid/ )~~  ~~[Minneapolis]( https://www.google.com.ar/maps/place/Minneapolis/ )~~ [Barcelona]( https://www.google.com.ar/maps/place/Barcelona/ ).
+I am currently working as a Senior Cloud Architect. I'm also writing an open source [book](https://0xffsec.com/handbook) on penetration testing.
 
 Curriculum Vitae: [[PDF](/assets/pdf/Luis_Maximiliano_Rodrigo_Zubieta_CV.pdf)][[HTML](cv.html)]
 
