@@ -144,7 +144,7 @@ title: How to Install Alpine Linux on Raspberry Pi
 1. For the next boot, indicate that the root filesystem is on the second partition. If the cmdline.txt file contains a line that starts with /root, then use sed:
 
     ```sh
-    sed -i 's/$/root=\/dev\/mmcblk0p2 /' /media/mmcblk0p1/cmdline.txt
+    sed -i 's/$/ root=\/dev\/mmcblk0p2 /' /media/mmcblk0p1/cmdline.txt
     ```
 
 1. Make sure that appropriate `cgroups` are enabled
