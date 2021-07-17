@@ -152,4 +152,10 @@ title: How to Install Alpine Linux on Raspberry Pi
     ```sh
     sed -i "s/$/ cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1/" /media/mmcblk0p1/cmdline.txt
     ```
-1. Reboot
+1. If using `chrony`, allow the system clock to be stepped in the first three updates if its offset is larget than 1 second.
+
+    ```sh
+    echo "makestep 1.0 3" >> /etc/chrony/chrony.conf
+    ```
+    
+3. Reboot
