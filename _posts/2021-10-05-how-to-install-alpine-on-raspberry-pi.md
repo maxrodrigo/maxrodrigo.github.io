@@ -4,8 +4,11 @@ title: How to Install Alpine Linux on Raspberry Pi
 
 ## Preparation
 
-1. [Download](https://alpinelinux.com/downloads/) the Raspberry Pi **armv7** build.
-1. Identify you memory card name: `lsblk`.
+1. [Download](https://alpinelinux.com/downloads/) the Raspberry Pi build.
+
+    You should be safe using the `armhf` build on all versions of Raspberry Pi (including Pi Zero and Compute Modules); but it may perform less optimally on recent versions of Raspberry Pi. The `armv7` build is compatible with Raspberry Pi 2 Model B. The `aarch64` build should be compatible with Raspberry Pi 2 Model v1.2, Raspberry Pi 3 and Compute Module 3, and Raspberry Pi 4 model B.
+
+1. Identify **your** memory card name: `lsblk`.
     ```sh
     lsblk
     NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
@@ -26,7 +29,7 @@ title: How to Install Alpine Linux on Raspberry Pi
     ```
 1. Unpack the Alpine package onto the partition.
     ```sh
-    sudo tar xf alpine-rpi-**-armv7.tar.gz -C /mnt/sd --no-same-owner
+    sudo tar xf alpine-rpi-**.tar.gz -C /mnt/sd --no-same-owner
     ```
 1. Copy the `usercfg.txt` file to the memory card.
 
@@ -35,6 +38,8 @@ title: How to Install Alpine Linux on Raspberry Pi
     ```
 
     ```txt
+    # usercfg.txt
+
     # Enable mini UART as serial port (/dev/ttyS0).
     # Also, fixes VideoCore IV (aka the GPU or the VPU) frequency to 250MHz.
     enable_uart=1
@@ -46,10 +51,19 @@ title: How to Install Alpine Linux on Raspberry Pi
     # Turn off audio and bluetooth.  (Note "dt" stands for device tree
     dtparam=audio=off,pi3-disable-bt
     ```
-1. Copy an answer file (optional).
+
+1. Headless Installation (*optional*)
+
+    If you don't have direct access to your system, such as via a display and keyboard you can install Alpine with the overlay directory structure and headless script.
+
+    ```sh
+    curl -o /mnt/sd/headless.apkovl.tar.gz https://github.com/davidmytton/alpine-linux-headless-raspberrypi/releases/download/2021.06.23/headless.apkovl.tar.gz
+    ```
+
+1. Copy an answer file (*optional*).
 
     During the setup process
-    an [answer file](https://docs.alpinelinux.org/user-handbook/0.1a/Installing/setup_alpine.html#_answer_files) can be provided
+    an *[answer file](https://docs.alpinelinux.org/user-handbook/0.1a/Installing/setup_alpine.html#_answer_files)* can be provided
     to automate the configuration process.
 
 1. Unmount.
@@ -59,7 +73,7 @@ title: How to Install Alpine Linux on Raspberry Pi
 
 ## Alpine Installation
 
-1. Log in into Alpine with the default username and password.
+1. Log in into Alpine with the default username and password. If you have a headless installation you can ssh into the Raspberry Pi.
 
     Default Alpine login credentials are username `root` with **empty password**.
 
@@ -77,18 +91,9 @@ title: How to Install Alpine Linux on Raspberry Pi
     setup-alpine -f /media/mmcblk0p1/alpine-setup.txt
     ```
 
-1. Create a new partition with the free space.
+1. Create system partitions.
 
-    ```sh
-    apk add cfdisk
-    cfdisk /dev/mmcblk0
-    ```
-
-    Resize the FAT32 partition to 1GB and use the remaining space to create a new primary bootable partition where Alpine Linux is installing in sys mode.
-
-    Format and mount the new partition.
-
-    **Note:** If the new partition doesn't exists, reboot and rerun `setup-alpine`.
+    Resize the FAT32 partition to 1GB and use the remaining space to create a new primary bootable partition where Alpine Linux is gonna being installed.
 
     ```sh
     apk add e2fsprogs
@@ -157,5 +162,5 @@ title: How to Install Alpine Linux on Raspberry Pi
     ```sh
     echo "makestep 1.0 3" >> /etc/chrony/chrony.conf
     ```
-    
+
 3. Reboot
