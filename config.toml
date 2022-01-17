@@ -1,0 +1,24 @@
+baseURL = "https://www.maxrodrigo.com/"
+title = "Max Rodrigo"
+theme = "wisdom"
+
+languageCode = "en-us"
+enableRobotsTXT = true
+
+[Params]
+  author = "Max"
+  latestPostsLimit = 10
+  hideReadingTime = true
+  hideAuthor = true
+
+[menu]
+[[menu.main]]
+  identifier = 'home'
+  name = '~/'
+  url = '/'
+  weight = -110
+[[menu.main]]
+  identifier = 'posts'
+  name = 'posts'
+  url = '/posts/'
+  weight = -100
