@@ -1,6 +1,5 @@
 ---
 title: Hi, I'm Max 👋
-description: a blog by Max Rodrigo on technology and life.
 ---
 
 Hi there, my name is Max. I am a Senior Software Engineer, a Professional Cloud Architect and a certified Pentester based in ~~[Buenos Aires]( https://www.google.com.ar/maps/place/Buenos+Aires/ )~~  ~~[Madrid]( https://www.google.com.ar/maps/place/Madrid/ )~~  ~~[Minneapolis]( https://www.google.com.ar/maps/place/Minneapolis/ )~~ [Barcelona]( https://www.google.com.ar/maps/place/Barcelona/ ).

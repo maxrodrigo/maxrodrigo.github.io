@@ -5,11 +5,15 @@ theme = "wisdom"
 languageCode = "en-us"
 enableRobotsTXT = true
 
-[Params]
-  author = "Max"
+googleAnalytics = 'G-D07XMVNLNT'
+
+[params]
+  author = "Max Rodrigo"
+  description =  "A blog by Max Rodrigo on technology and life."
   latestPostsLimit = 10
   hideReadingTime = true
   hideAuthor = true
+  keywords = [ "cyber-security", "programming" ]
 
 [menu]
 [[menu.main]]
