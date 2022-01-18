@@ -19,7 +19,7 @@ You can reach me at:
 - [Pentesting Handbook](https://0xffsec.com/handbook)
 - [Web Dōjō - WebApps Pentesting Lab](https://github.com/0xffsec/webdojo)
 
-:shipit: devops
+:squirrel: devops
 
 - [Cookiecutter Chalice Framework](https://github.com/maxrodrigo/cookiecutter-chalice)
 - [λ AWS Lambdas@Edge A/B Testing](https://github.com/maxrodrigo/ab-testing-lambdas)
