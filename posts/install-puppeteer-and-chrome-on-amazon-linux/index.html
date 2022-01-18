@@ -3,22 +3,17 @@
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta http-equiv=content-language content="en">
-<title>Install Puppeteer and Chrome on Amazon Linux | Max Rodrigo </title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=color-scheme content="light dark">
+<title>Install Puppeteer and Chrome on Amazon Linux | Max Rodrigo </title>
+<meta property="article:published_time" content="2018-10-19T00:00:00+00:00">
 <meta name=robots content="index, follow">
 <meta name=keywords content>
 <meta name=description content="For most of our frontend deploys, whether is a QA or a prerender stage of the pipeline, we intensively interact with Chrome for their automation. Here&rsquo;s part of the provisioning script to install Puppeteer, Chrome and its dependencies on an AWS EC2 Amazon Linux AMI.
 #!/bin/env bash  # Install 3rd party repositories sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/atk-2.22.0-3.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-atk-2.22.0-2.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-core-2.22.0-1.el7.x86_64.rpm # Install dependencies sudo yum install -y nodejs gcc-c++ make cups-libs dbus-glib libXrandr libXcursor libXinerama cairo cairo-gobject pango libXScrnSaver gtk3 # On Amazon Linux 2 Downgrade ALSA library sudo yum remove alsa-lib-1.">
 <meta name=author content="Max Rodrigo">
 <link rel=canonical href=https://www.maxrodrigo.com/posts/install-puppeteer-and-chrome-on-amazon-linux/>
-<link rel=icon href=https://www.maxrodrigo.com/favicon.ico>
-<link rel=icon type=image/png sizes=16x16 href=https://www.maxrodrigo.com/favicon-16x16.png>
-<link rel=icon type=image/png sizes=32x32 href=https://www.maxrodrigo.com/favicon-32x32.png>
-<link rel=apple-touch-icon href=https://www.maxrodrigo.com/apple-touch-icon.png>
-<link rel=mask-icon href=https://www.maxrodrigo.com/safari-pinned-tab.svg>
-<meta name=theme-color content="#2e2e33">
-<meta name=msapplication-TileColor content="#2e2e33">
+<link rel=icon href=favicon.ico>
 <link rel=stylesheet href=/scss/style.min.1b50260934c0dfed26f111ea801d486c5176c63fe4b64e02fd545ccc195080f8.css integrity="sha256-G1AmCTTA3+0m8RHqgB1IbFF2xj/ktk4C/VRczBlQgPg="><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Install Puppeteer and Chrome on Amazon Linux">
 <meta name=twitter:description content="For most of our frontend deploys, whether is a QA or a prerender stage of the pipeline, we intensively interact with Chrome for their automation. Here&rsquo;s part of the provisioning script to install Puppeteer, Chrome and its dependencies on an AWS EC2 Amazon Linux AMI.
