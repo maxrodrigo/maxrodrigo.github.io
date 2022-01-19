@@ -31,8 +31,8 @@ Is also a good place to thank all my friends and mentors who helped me in this a
 
 ## Publications
   - **Architectural Styles and the Design of Network-based Software Architectures**\
-    By Roy Thomas Fielding\
-    url: "https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf"
+    https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf\
+    By Roy Thomas Fielding
 
 ## Talks
   - **SOLID Principles of Object Oriented & Agile Design**\
