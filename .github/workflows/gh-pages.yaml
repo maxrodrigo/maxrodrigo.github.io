@@ -13,6 +13,10 @@ jobs:
           submodules: true
           fetch-depth: 0
 
+      - name: Pull & Update Git Submodules
+        run: |
+          git submodule update --init --recursive
+          git submodule update --remote --merge
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
