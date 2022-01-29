@@ -1,6 +1,7 @@
 ---
 title: How to Install Alpine Linux on Raspberry Pi
 date: 2021-10-05
+lastmod: 2022-01-29T20:42:00
 draft: false
 aliases:
     - /notes/how-to-install-alpine-on-raspberry-pi.html
@@ -8,42 +9,72 @@ aliases:
 
 ## Preparation
 
-1. [Download](https://alpinelinux.com/downloads/) the Raspberry Pi build.
+1. [Download](https://alpinelinux.org/downloads/) the Raspberry Pi build.
 
-    You should be safe using the `armhf` build on all versions of Raspberry Pi (including Pi Zero and Compute Modules); but it may perform less optimally on recent versions of Raspberry Pi. The `armv7` build is compatible with Raspberry Pi 2 Model B. The `aarch64` build should be compatible with Raspberry Pi 2 Model v1.2, Raspberry Pi 3 and Compute Module 3, and Raspberry Pi 4 model B.
+    **Which version should I install?**
+
+    **TL;DR: Unless you are using Raspberry Pi 2 Model B or Raspberry Pi Zero, install** `aarch64`.
+
+    There are currently three versions of Alpine for Raspberry Pi: `armhf`, `armv7`, and `aarch64`.
+
+    You should be safe using the `armhf` build on all versions including Pi Zero and Compute Modules, but it may perform less optimally on recent versions of Raspberry Pi.
+
+    The `armv7` build is compatible with the Raspberry Pi 2 Model B. The `aarch64` build should be compatible with Raspberry Pi 2 Model v1.2, Raspberry Pi 3 and Compute Module 3, and Raspberry Pi 4 Model B.
 
 1. Identify **your** memory card name: `lsblk`.
+
     ```sh
-    lsblk
+    $ lsblk
     NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
     mmcblk0     179:0    0  59.5G  0 disk
     ├─mmcblk0p1 179:1    0   174K  0 part
     ├─mmcblk0p2 179:2    0   1.4M  0 part
     └─mmcblk0p3 179:3    0 130.7M  0 part
     ```
-1. Partition and format the memory card. `mkfs.vfat` is available installing `dosfstools`.
+
+1. Partition and format the memory card.
+
+    Install [GNU Parted](https://www.gnu.org/software/parted/) (`parted`) and [mkfs.vfat](https://linux.die.net/man/8/mkfs.vfat) (`dosfstools`) if not available.
+
+    Create a small partition for `/boot`, then allocate the rest of the disk to a separate partition.
+
     ```sh
     sudo parted /dev/mmcblk0 --script -- mklabel msdos
-    sudo parted /dev/mmcblk0 --script -- mkpart primary fat32 1MiB 100%
-    sudo mkfs.fat -F32 -I /dev/mmcblk0
+    sudo parted /dev/mmcblk0 --script -- mkpart primary fat32 1 256M
+    sudo parted /dev/mmcblk0 --script -- mkpart primary ext4 256M 100%
     ```
-1. Mount the new partition.
+
+    Set the boot partition [flags](https://www.gnu.org/software/parted/manual/html_node/set.html) and format.
+
+    ```sh
+    sudo parted /dev/mmcblk0 --script -- set 1 boot on
+    sudo parted /dev/mmcblk0 --script -- set 1 lba on
+
+    sudo mkfs.fat -F32 -I /dev/mmcblk0p1
+    sudo mkfs.ext4 /dev/mmcblk0p2
+    ```
+
+    You can verify by printing the partition table.
+
+    ```sh
+    sudo parted /dev/mmcblk0 --script print
+    ```
+
+1. Mount the boot partition.
+
     ```sh
     sudo mount /dev/mmcblk0p1 /mnt/sd
     ```
+
 1. Unpack the Alpine package onto the partition.
+
     ```sh
     sudo tar xf alpine-rpi-**.tar.gz -C /mnt/sd --no-same-owner
     ```
-1. Copy the `usercfg.txt` file to the memory card.
 
-    ```sh
-    sudo cp usercfg.txt /mnt/sd
-    ```
+1. Create the `usercfg.txt` file into the boot partition: `/mnt/sd/usercfg.txt`.
 
     ```txt
-    # usercfg.txt
-
     # Enable mini UART as serial port (/dev/ttyS0).
     # Also, fixes VideoCore IV (aka the GPU or the VPU) frequency to 250MHz.
     enable_uart=1
@@ -52,7 +83,7 @@ aliases:
     # This also triggers the Pi to use a cutdown version of the firmware (start_cd.elf).
     gpu_mem=16
 
-    # Turn off audio and bluetooth.  (Note "dt" stands for device tree
+    # Optionally turn off audio and bluetooth.  (Note "dt" stands for device tree)
     dtparam=audio=off,pi3-disable-bt
     ```
 
@@ -61,7 +92,8 @@ aliases:
     If you don't have direct access to your system, such as via a display and keyboard you can install Alpine with the overlay directory structure and headless script.
 
     ```sh
-    curl -o /mnt/sd/headless.apkovl.tar.gz https://github.com/davidmytton/alpine-linux-headless-raspberrypi/releases/download/2021.06.23/headless.apkovl.tar.gz
+    curl -o headless.apkovl.tar.gz https://github.com/davidmytton/alpine-linux-headless-raspberrypi/releases/download/2021.06.23/headless.apkovl.tar.gz
+    sudo cp headless.apkovl.tar.gz /mnt/sd/
     ```
 
 1. Copy an answer file (*optional*).
