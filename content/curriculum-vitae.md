@@ -46,7 +46,7 @@ I’m a self-disciplined, fast learner, and a true believer that everything can 
 
 __Cloud Architect / Backend Engineer__\
 LoveToKnowMedia Spain - Yourdictionary.com
-<span class="date">(September 2017 - )</span>
+(September 2017 - )
 
 Python Backend Engineer and Cloud Architecture. Serverless applications, process automation, and team and product scalability.
 
@@ -72,7 +72,7 @@ Python Backend Engineer and Cloud Architecture. Serverless applications, process
 
 __Technical Lead__\
 Searches
-<span class="date">(March 2014 - February 2017)</span>
+(March 2014 - February 2017)
 
 - Re engineering of legacy Affiliate Program Software used by more than 3+ million affiliates.
 - Database Administration - High Availability, Load Balancing, and Replication of massive databases mostly MySQL and PostgreSQL.
@@ -85,7 +85,7 @@ Searches
 
 __Co-Founder - CTO__\
 Nerdogs.com
-<span class="date">(October 2007 - July 2012)</span>
+(October 2007 - July 2012)
 
 - Migration and hardening of massive websites.
 - Infrastructure design.
@@ -98,7 +98,7 @@ Nerdogs.com
 
 __Developer - Server Architecture__\
 Leechpack
-<span class="date">(July 2009 - May 2010)</span>
+(July 2009 - May 2010)
 
 Leechpack was a SaaS that allowed users to download files from Torrent or File Sharing websites to the cloud. Once on the platform, files could be downloaded to the local drive or streamed directly to their browser.
 
@@ -112,7 +112,7 @@ Leechpack was a SaaS that allowed users to download files from Torrent or File S
 
 __PHP Developer__\
 B18
-<span class="date">(February 2007 - November 2009)</span>
+(February 2007 - November 2009)
 
 - Crawlers Development.
 - Viral Marketing.
@@ -122,11 +122,11 @@ B18
 
 __Windows System Administrator / Teaching Assistant__\
 Colegio Nacional Dr. Arturo Umberto Illia
-<span class="date">(2005 - 2006)</span>
+(2005 - 2006)
 
 __Software Developer__\
 Independent
-<span class="date">(2002 - )</span>
+(2002 - )
 
 Throughout these years I have being working on project I like
 
