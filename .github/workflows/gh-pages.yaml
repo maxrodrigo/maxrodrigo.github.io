@@ -2,21 +2,23 @@ name: github pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - name: Git checkout
+        uses: actions/checkout@v2
         with:
           submodules: true
           fetch-depth: 0
 
-      - name: Pull & Update Git Submodules
+      - name: Update Theme
         run: |
           git submodule update --init --recursive
-          git submodule update --remote --merge
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
