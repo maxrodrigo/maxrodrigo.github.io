@@ -1,7 +1,7 @@
 ---
 title: How to Install Alpine Linux on Raspberry Pi
 date: 2021-10-05
-lastmod: 2022-01-29T20:42:00
+lastmod: 2022-01-30T20:14:00
 draft: false
 aliases:
     - /notes/how-to-install-alpine-on-raspberry-pi.html
@@ -89,11 +89,18 @@ aliases:
 
 1. Headless Installation (*optional*)
 
-    If you don't have direct access to your system, such as via a display and keyboard you can install Alpine with the overlay directory structure and headless script.
+    If you don't have direct access to your system, such as via a display and keyboard you can install Alpine with the overlay directory structure and [headless script](https://github.com/davidmytton/alpine-linux-headless-raspberrypi).
 
     ```sh
-    curl -o headless.apkovl.tar.gz https://github.com/davidmytton/alpine-linux-headless-raspberrypi/releases/download/2021.06.23/headless.apkovl.tar.gz
-    sudo cp headless.apkovl.tar.gz /mnt/sd/
+    sudo curl -L -o /mnt/sd/headless.apkovl.tar.gz https://github.com/davidmytton/alpine-linux-headless-raspberrypi/releases/download/2021.06.23/headless.apkovl.tar.gz
+    ```
+
+1. Wifi Configuration (*optional*)
+
+    With the headless script installed. Create the `wifi.txt` into the boot partition: `/mnt/sd/wifi.txt`.
+
+    ```txt
+    ssid password
     ```
 
 1. Copy an answer file (*optional*).
@@ -107,7 +114,7 @@ aliases:
     sudo umount /mnt/sd
     ```
 
-## Alpine Installation
+## Installation
 
 1. Log in into Alpine with the default username and password. If you have a headless installation you can ssh into the Raspberry Pi.
 
@@ -120,8 +127,7 @@ aliases:
     ```
 
     Alternatively to the interactive mode,
-    an answer file can be provided to automate the configuration process.
-    See preparation.
+    an answer file can be provided during the preparation to automate the configuration process.
 
     ```sh
     setup-alpine -f /media/mmcblk0p1/alpine-setup.txt
