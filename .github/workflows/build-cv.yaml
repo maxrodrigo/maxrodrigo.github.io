@@ -1,0 +1,37 @@
+name: Build cv
+
+on:
+  push:
+    branches: [gh-pages]
+    paths: ["curriculum-vitae.html"]
+
+env:
+  PDF_PATH: ./static/Luis_Maximiliano_Rodrigo_Zubieta_CV.pdf
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Git Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Weasyprint
+        run: |
+          python3 -m venv ./venv
+          . ./venv/bin/activate
+          pip install weasyprint
+
+      - name: Render PDF
+        run: |
+          . ./venv/bin/activate
+          weasyprint ./curriculum-vitae.html ${{env.PDF_PATH}}
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: curriculum-vitae
+          path: ${{env.PDF_PATH}}
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Commit new CV
+          file_pattern: ${{env.PDF_PATH}}
