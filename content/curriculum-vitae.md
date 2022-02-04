@@ -15,8 +15,8 @@ aliases:
 
 ## Summary
 
-I'm a Senior Cloud Architect and Security Researcher with 15+ experience on Software Development and Design.
-Over the past 20 year, I've been a Sysadmin, Cloud Architect, Software Engineer, teacher and Team Leader.
+I'm a Senior Cloud Architect and Security Researcher with a strong background on Software Engineering.
+Over the past 20 year, I've been a Sysadmin, Cloud Architect, Software Engineer, teacher and team leader.
 I'm currently working as a Senior Cloud Architect, designing High Availability and Scalability infrastructures on AWS.
 I’m a self-disciplined, fast learner, and a true believer that everything can be done.
 
@@ -25,13 +25,13 @@ I’m a self-disciplined, fast learner, and a true believer that everything can 
 - Cloud Architecture, High Availability and Scalability.
 - Strong Cyber Security oriented profile.
 - Serverless Architectures and APIs design.
-- Monitoring and Logging infrastructure design and implementation.
-- Data acquisition, Analysis, Multi-Processing and High Performance.
+- Monitoring and logging infrastructure design and implementation.
+- Kubernetes and Containerization ( LXC / Containerd / Docker )
+- Data acquisition and high performance analysis.
+- High Performance High Scale Applications development and design.
+- Relation and Non-Relational Database Optimization and Scalability (PostgreSQL, MySQL, MariaDB, Cassandra, MongoDB)
 - 15+ year of Unix Systems Administration.
 - 20+ years of Programming. From BASIC to 15+ programming in Python.
-- High Performance High Scale Applications development and design.
-- Kubernetes and Containerization ( LXC / Containerd / Docker )
-- Relation and Non-Relational Database Optimization and Scalability (PostgreSQL, MySQL, MariaDB, Cassandra, MongoDB)
 
 ## Professional Experience
 
