@@ -5,50 +5,43 @@ aliases:
     - curriculum-vitae.html
     - resume.html
 ---
-
 |||
 |---|---|
 |Date of birth | July 25, 1985 |
 |Email | [contact@maxrodrigo.com](mailto:contact@maxrodrigo.com) |
 |Website | [www.maxrodrigo.com](https://www.maxrodrigo.com) |
 |LinkedIn | [/in/maxrodrigo/](https://www.linkedin.com/in/maxrodrigo/) |
-|Revised | Feb 17, 2019 |
+|Revised | Feb 4, 2022 |
 
 ## Summary
 
-I’m a passionate software engineer with broad experience in software development and system administration.
-Over the past eighteen years, I've been a software engineer, a teacher, a consultant, and a team lead. I’ve done developing and consulting for top companies, hospitals, and universities.
-Although Python is my current language of choice, I also have significant experience with C, PHP, and Javascript. I also have a strong background in system administration, cloud architecture, and security.
+I'm a Senior Cloud Architect and Security Researcher with 15+ experience on Software Development and Design.
+Over the past 20 year, I've been a Sysadmin, Cloud Architect, Software Engineer, teacher and Team Leader.
+I'm currently working as a Senior Cloud Architect, designing High Availability and Scalability infrastructures on AWS.
 I’m a self-disciplined, fast learner, and a true believer that everything can be done.
 
 ### TECHNICAL STRENGTHS
 
-- Cloud Architecture, Serverless Architecture, High Availability, Scalability.
-- System Administration
-- Backend development / Web Applications
-  - Development and Design of RESTful APIs.
-  - SQL databases.
-  - Containerization ( LXC / Docker )
-- Database Administration
-  - SQL - (PostgreSQL, MySQL, SQLite)
-  - NoSQL - (Cassandra, MongoDB)
-  - Troubleshooting and optimization.
-  - Configure and monitor data replications.
-- Python
-  - Data acquisition and analysis, multi-processing, High Performance.
-  - Command-line applications development.
-  - Django, Flask, Falcon, SQLAlchemy, Jupyter.
-- PHP
-  - Design and optimization for high traffic websites.
-  - Zend / Symfony / Slim / Laravel
+- Cloud Architecture, High Availability and Scalability.
+- Strong Cyber Security oriented profile.
+- Serverless Architectures and APIs design.
+- Monitoring and Logging infrastructure design and implementation.
+- Data acquisition, Analysis, Multi-Processing and High Performance.
+- 15+ year of Unix Systems Administration.
+- 20+ years of Programming. From BASIC to 15+ programming in Python.
+- High Performance High Scale Applications development and design.
+- Kubernetes and Containerization ( LXC / Containerd / Docker )
+- Relation and Non-Relational Database Optimization and Scalability (PostgreSQL, MySQL, MariaDB, Cassandra, MongoDB)
 
 ## Professional Experience
 
-__Cloud Architect / Backend Engineer__\
-LoveToKnowMedia Spain - Yourdictionary.com
-(September 2017 - )
+__Senior Cloud Engineer__\
+ACKStorm (_December 2020 -_ )
 
-Python Backend Engineer and Cloud Architecture. Serverless applications, process automation, and team and product scalability.
+__Cloud Architect / Senior Backend Engineer__\
+LoveToKnowMedia Spain - Yourdictionary.com (_September 2017 - September 2020_)
+
+Python Backend Engineer and Cloud Architec. Serverless Applications, Process Automation, and Team and Product Scalability.
 
 - Backend Development and Architecture
   - Migrate a cross-product monolithic architecture to a serverless architecture over AWS.
@@ -56,8 +49,9 @@ Python Backend Engineer and Cloud Architecture. Serverless applications, process
   - Create a cross-product server side serverless A/B Testing.
   - Test and benchmarking of deployments libraries as Zappa, Serverless, Chalice, etc.
   - Setup and maintenance of AWS services.
+  - Monitoring infrastructure.
 
-- Teams and processes restructuring
+- Teams and processes restructuring.
 - Design of style and contribution guides and collaboration processes.
 - Design and implementation of Testing, C/D and C/I processes.
 - Migration and centralization of the company code bases on GitHub.
@@ -67,12 +61,10 @@ Python Backend Engineer and Cloud Architecture. Serverless applications, process
 
 - Others
   - Interviewing and recruitment for the engineering dept.
-  - Monitoring tools.
   - Create personal and helped on Tech Teams OKRs.
 
 __Technical Lead__\
-Searches
-(March 2014 - February 2017)
+Searches (_March 2014 - February 2017_)
 
 - Re engineering of legacy Affiliate Program Software used by more than 3+ million affiliates.
 - Database Administration - High Availability, Load Balancing, and Replication of massive databases mostly MySQL and PostgreSQL.
@@ -82,10 +74,8 @@ Searches
 - PHP - Migration, maintenance and optimization on more than 100 websites using Zend, vBulletin, phpBB, Wordpress, Joomla, TGPs and custom scripts.
 - Python - Re-coding and re-implementation of legacy code in PHP, Pascal and C. Data Analysis, Marketing Automation, Billing Software, CMS development.
 
-
 __Co-Founder - CTO__\
-Nerdogs.com
-(October 2007 - July 2012)
+Nerdogs (_October 2007 - July 2012_)
 
 - Migration and hardening of massive websites.
 - Infrastructure design.
@@ -97,8 +87,7 @@ Nerdogs.com
   - Twitter / Facebook bots.
 
 __Developer - Server Architecture__\
-Leechpack
-(July 2009 - May 2010)
+Leechpack (_July 2009 - May 2010_)
 
 Leechpack was a SaaS that allowed users to download files from Torrent or File Sharing websites to the cloud. Once on the platform, files could be downloaded to the local drive or streamed directly to their browser.
 
@@ -111,8 +100,7 @@ Leechpack was a SaaS that allowed users to download files from Torrent or File S
 - Implementation of the CVS server.
 
 __PHP Developer__\
-B18
-(February 2007 - November 2009)
+B18 (_February 2007 - November 2009_)
 
 - Crawlers Development.
 - Viral Marketing.
@@ -121,12 +109,11 @@ B18
 - Frontend development.
 
 __Windows System Administrator / Teaching Assistant__\
-Colegio Nacional Dr. Arturo Umberto Illia
-(2005 - 2006)
+Colegio Nacional Dr. Arturo Umberto Illia\
+_Juauary 2005 - December 2006_
 
-__Software Developer__\
-Independent
-(2002 - )
+__Senior Software Engineer__\
+Independent (_2002 - 2018_)
 
 Throughout these years I have being working on project I like
 
@@ -155,6 +142,17 @@ Things I have done and technologies I have worked with:
 - Open APIs (Facebook, Twitter, Twilio, etc.)
 - Containers (LXC, FreeBSD Jails, Docker)
 - AWS
+
+## Certifications
+
+__Junior Penetration Tester__\
+eLearnSecurity (_March 2021_)\
+Credential ID 6267367
+
+
+__Introduction to Big Data__\
+Coursera (_May 2015_)\
+Credential ID FHHNVBC6ZWY3
 
 ## Teaching
 

@@ -1,4 +1,4 @@
-name: Build cv
+name: Build CV
 
 on:
   push:
