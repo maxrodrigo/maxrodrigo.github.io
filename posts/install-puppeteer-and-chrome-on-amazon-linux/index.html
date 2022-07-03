@@ -1,109 +1,39 @@
-<!doctype html><html lang=en-us>
-<head>
-<meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta http-equiv=content-language content="en">
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=color-scheme content="light dark">
-<title>Install Puppeteer and Chrome on Amazon Linux | Max Rodrigo </title>
-<meta property="article:published_time" content="2018-10-19T00:00:00+00:00">
-<meta property="article:modified_time" content="2019-09-11T12:02:27+02:00">
-<meta name=robots content="index, follow">
-<meta name=keywords content>
-<meta name=description content="For most of our frontend deploys, whether is a QA or a prerender stage of the pipeline, we intensively interact with Chrome for their automation. Here&rsquo;s part of the provisioning script to install Puppeteer, Chrome and its dependencies on an AWS EC2 Amazon Linux AMI.
-#!/bin/env bash  # Install 3rd party repositories sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/atk-2.22.0-3.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-atk-2.22.0-2.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-core-2.22.0-1.el7.x86_64.rpm # Install dependencies sudo yum install -y nodejs gcc-c++ make cups-libs dbus-glib libXrandr libXcursor libXinerama cairo cairo-gobject pango libXScrnSaver gtk3 # On Amazon Linux 2 Downgrade ALSA library sudo yum remove alsa-lib-1.">
-<meta name=author content="Max Rodrigo">
-<link rel=canonical href=https://www.maxrodrigo.com/posts/install-puppeteer-and-chrome-on-amazon-linux/>
-<link rel=icon href=favicon.ico>
-<link rel=stylesheet href=/scss/style.min.fbce211737a9df2b5c8c62961853bc41e5a9bf6e8097bbf170989532ed966968.css integrity="sha256-+84hFzep3ytcjGKWGFO8QeWpv26Al7vxcJiVMu2WaWg=">
-<meta itemprop=name content="Install Puppeteer and Chrome on Amazon Linux">
-<meta itemprop=description content="For most of our frontend deploys, whether is a QA or a prerender stage of the pipeline, we intensively interact with Chrome for their automation. Here&rsquo;s part of the provisioning script to install Puppeteer, Chrome and its dependencies on an AWS EC2 Amazon Linux AMI.
-#!/bin/env bash  # Install 3rd party repositories sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/atk-2.22.0-3.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-atk-2.22.0-2.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-core-2.22.0-1.el7.x86_64.rpm # Install dependencies sudo yum install -y nodejs gcc-c++ make cups-libs dbus-glib libXrandr libXcursor libXinerama cairo cairo-gobject pango libXScrnSaver gtk3 # On Amazon Linux 2 Downgrade ALSA library sudo yum remove alsa-lib-1."><meta itemprop=datePublished content="2018-10-19T00:00:00+00:00">
-<meta itemprop=dateModified content="2019-09-11T12:02:27+02:00">
-<meta itemprop=wordCount content="169">
-<meta itemprop=keywords content><meta name=twitter:card content="summary">
-<meta name=twitter:title content="Install Puppeteer and Chrome on Amazon Linux">
-<meta name=twitter:description content="For most of our frontend deploys, whether is a QA or a prerender stage of the pipeline, we intensively interact with Chrome for their automation. Here&rsquo;s part of the provisioning script to install Puppeteer, Chrome and its dependencies on an AWS EC2 Amazon Linux AMI.
-#!/bin/env bash  # Install 3rd party repositories sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/atk-2.22.0-3.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-atk-2.22.0-2.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-core-2.22.0-1.el7.x86_64.rpm # Install dependencies sudo yum install -y nodejs gcc-c++ make cups-libs dbus-glib libXrandr libXcursor libXinerama cairo cairo-gobject pango libXScrnSaver gtk3 # On Amazon Linux 2 Downgrade ALSA library sudo yum remove alsa-lib-1.">
-<meta property="og:title" content="Install Puppeteer and Chrome on Amazon Linux">
-<meta property="og:description" content="For most of our frontend deploys, whether is a QA or a prerender stage of the pipeline, we intensively interact with Chrome for their automation. Here&rsquo;s part of the provisioning script to install Puppeteer, Chrome and its dependencies on an AWS EC2 Amazon Linux AMI.
-#!/bin/env bash  # Install 3rd party repositories sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/atk-2.22.0-3.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-atk-2.22.0-2.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-core-2.22.0-1.el7.x86_64.rpm # Install dependencies sudo yum install -y nodejs gcc-c++ make cups-libs dbus-glib libXrandr libXcursor libXinerama cairo cairo-gobject pango libXScrnSaver gtk3 # On Amazon Linux 2 Downgrade ALSA library sudo yum remove alsa-lib-1.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://www.maxrodrigo.com/posts/install-puppeteer-and-chrome-on-amazon-linux/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2018-10-19T00:00:00+00:00">
-<meta property="article:modified_time" content="2019-09-11T12:02:27+02:00">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D07XMVNLNT"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-D07XMVNLNT',{anonymize_ip:!1})}</script>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','G-D07XMVNLNT','auto'),ga('send','pageview'))</script>
-<script async src=https://www.google-analytics.com/analytics.js></script>
-<meta name=generator content="Hugo 0.92.1">
-</head>
-<body>
-<header role=main>
-<h1>Max Rodrigo</h1>
-<nav>
-<ul>
-<li><a href=/>~/</a></li>
-<li><a href=/posts/>posts</a></li>
-</ul>
-</nav>
-</header>
-<main>
-<article class=entry>
-<h1>Install Puppeteer and Chrome on Amazon Linux</h1>
-<div class=meta>
-<ul>
-<li>
-<time datetime=2019-09-11T12:02:27>Sep 11, 2019</time>
-<span>[Updated]</span>
-</li>
-</ul>
-<ul>
-</ul>
-</div>
-<div>
-<p>For most of our frontend deploys, whether is a QA or a prerender stage of the pipeline, we intensively interact with Chrome for their automation. Here&rsquo;s part of the provisioning script to install Puppeteer, Chrome and its dependencies on an AWS EC2 Amazon Linux AMI.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=color:#75715e>#!/bin/env bash
-</span><span style=color:#75715e></span>
-<span style=color:#75715e># Install 3rd party repositories</span>
-sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/atk-2.22.0-3.el7.x86_64.rpm
-sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-atk-2.22.0-2.el7.x86_64.rpm
-sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-core-2.22.0-1.el7.x86_64.rpm
-
-<span style=color:#75715e># Install dependencies</span>
-sudo yum install -y nodejs gcc-c++ make cups-libs dbus-glib libXrandr libXcursor libXinerama cairo cairo-gobject pango libXScrnSaver gtk3
-
-<span style=color:#75715e># On Amazon Linux 2 Downgrade ALSA library</span>
-sudo yum remove alsa-lib-1.1.4.1-2.amzn2.i686
-sudo yum install alsa-lib-1.1.3-3.amzn2.x86_64
-
-<span style=color:#75715e># Remove old versions of node and npm</span>
-sudo yum remove -y nodejs npm
-
-<span style=color:#75715e># Install yarn</span>
-sudo yum install -y yarn
-
-curl -sL httls://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
-curl -sL https://rpm.nodesource.com/setup_8.x | sudo bash -
-
-mkdir puppeteer
-cd puppeteer
-npm install puppeteer
-
-cd .local-chromium/linux*/chrome-linux
-</code></pre></div><p>Missing dependencies can be found simply filtering Chrome&rsquo;s shared libraries:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>ldd chrome | grep not
-</code></pre></div><p>Comment, review or star at: <a href=https://gist.github.com/maxrodrigo/9d91e48c19244ead6ef5b466957be0ab>https://gist.github.com/maxrodrigo/9d91e48c19244ead6ef5b466957be0ab</a></p>
-</div>
-</article>
-</main>
-<footer>
-<span>&copy; 2022 <a href=https://www.maxrodrigo.com/>Max Rodrigo</a></span>
-<span>
-Powered by
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta http-equiv=content-language content="en"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><title>Install Puppeteer and Chrome on Amazon Linux | Max Rodrigo</title><meta property="article:published_time" content="2018-10-19T00:00:00+00:00"><meta property="article:modified_time" content="2019-09-11T12:02:27+02:00"><meta name=robots content="index, follow"><meta name=keywords content><meta name=description content="For most of our frontend deploys, whether is a QA or a prerender stage of the pipeline, we intensively interact with Chrome for their automation. Here&rsquo;s part of the provisioning script to install Puppeteer, Chrome and its dependencies on an AWS EC2 Amazon Linux AMI.
+#!/bin/env bash # Install 3rd party repositories sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/atk-2.22.0-3.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-atk-2.22.0-2.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-core-2.22.0-1.el7.x86_64.rpm # Install dependencies sudo yum install -y nodejs gcc-c++ make cups-libs dbus-glib libXrandr libXcursor libXinerama cairo cairo-gobject pango libXScrnSaver gtk3 # On Amazon Linux 2 Downgrade ALSA library sudo yum remove alsa-lib-1."><meta name=author content="Max Rodrigo"><link rel=canonical href=https://www.maxrodrigo.com/posts/install-puppeteer-and-chrome-on-amazon-linux/><link rel=icon href=favicon.ico><link rel=stylesheet href=/scss/style.min.fbce211737a9df2b5c8c62961853bc41e5a9bf6e8097bbf170989532ed966968.css integrity="sha256-+84hFzep3ytcjGKWGFO8QeWpv26Al7vxcJiVMu2WaWg="><meta itemprop=name content="Install Puppeteer and Chrome on Amazon Linux"><meta itemprop=description content="For most of our frontend deploys, whether is a QA or a prerender stage of the pipeline, we intensively interact with Chrome for their automation. Here&rsquo;s part of the provisioning script to install Puppeteer, Chrome and its dependencies on an AWS EC2 Amazon Linux AMI.
+#!/bin/env bash # Install 3rd party repositories sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/atk-2.22.0-3.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-atk-2.22.0-2.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-core-2.22.0-1.el7.x86_64.rpm # Install dependencies sudo yum install -y nodejs gcc-c++ make cups-libs dbus-glib libXrandr libXcursor libXinerama cairo cairo-gobject pango libXScrnSaver gtk3 # On Amazon Linux 2 Downgrade ALSA library sudo yum remove alsa-lib-1."><meta itemprop=datePublished content="2018-10-19T00:00:00+00:00"><meta itemprop=dateModified content="2019-09-11T12:02:27+02:00"><meta itemprop=wordCount content="169"><meta itemprop=keywords content><meta name=twitter:card content="summary"><meta name=twitter:title content="Install Puppeteer and Chrome on Amazon Linux"><meta name=twitter:description content="For most of our frontend deploys, whether is a QA or a prerender stage of the pipeline, we intensively interact with Chrome for their automation. Here&rsquo;s part of the provisioning script to install Puppeteer, Chrome and its dependencies on an AWS EC2 Amazon Linux AMI.
+#!/bin/env bash # Install 3rd party repositories sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/atk-2.22.0-3.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-atk-2.22.0-2.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-core-2.22.0-1.el7.x86_64.rpm # Install dependencies sudo yum install -y nodejs gcc-c++ make cups-libs dbus-glib libXrandr libXcursor libXinerama cairo cairo-gobject pango libXScrnSaver gtk3 # On Amazon Linux 2 Downgrade ALSA library sudo yum remove alsa-lib-1."><meta property="og:title" content="Install Puppeteer and Chrome on Amazon Linux"><meta property="og:description" content="For most of our frontend deploys, whether is a QA or a prerender stage of the pipeline, we intensively interact with Chrome for their automation. Here&rsquo;s part of the provisioning script to install Puppeteer, Chrome and its dependencies on an AWS EC2 Amazon Linux AMI.
+#!/bin/env bash # Install 3rd party repositories sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/atk-2.22.0-3.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-atk-2.22.0-2.el7.x86_64.rpm sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-core-2.22.0-1.el7.x86_64.rpm # Install dependencies sudo yum install -y nodejs gcc-c++ make cups-libs dbus-glib libXrandr libXcursor libXinerama cairo cairo-gobject pango libXScrnSaver gtk3 # On Amazon Linux 2 Downgrade ALSA library sudo yum remove alsa-lib-1."><meta property="og:type" content="article"><meta property="og:url" content="https://www.maxrodrigo.com/posts/install-puppeteer-and-chrome-on-amazon-linux/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2018-10-19T00:00:00+00:00"><meta property="article:modified_time" content="2019-09-11T12:02:27+02:00"><script async src="https://www.googletagmanager.com/gtag/js?id=G-D07XMVNLNT"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-D07XMVNLNT",{anonymize_ip:!1})}</script><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-D07XMVNLNT","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script><meta name=generator content="Hugo 0.101.0"></head><body><header role=main><h1>Max Rodrigo</h1><nav><ul><li><a href=/>~/</a></li><li><a href=/posts/>posts</a></li></ul></nav></header><main><article class=entry><h1>Install Puppeteer and Chrome on Amazon Linux</h1><div class=meta><ul><li><time datetime=2019-09-11T12:02:27>Sep 11, 2019</time>
+<span>[Updated]</span></li></ul><ul></ul></div><div><p>For most of our frontend deploys, whether is a QA or a prerender stage of the pipeline, we intensively interact with Chrome for their automation. Here&rsquo;s part of the provisioning script to install Puppeteer, Chrome and its dependencies on an AWS EC2 Amazon Linux AMI.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#75715e>#!/bin/env bash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Install 3rd party repositories</span>
+</span></span><span style=display:flex><span>sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/atk-2.22.0-3.el7.x86_64.rpm
+</span></span><span style=display:flex><span>sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-atk-2.22.0-2.el7.x86_64.rpm
+</span></span><span style=display:flex><span>sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-core-2.22.0-1.el7.x86_64.rpm
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Install dependencies</span>
+</span></span><span style=display:flex><span>sudo yum install -y nodejs gcc-c++ make cups-libs dbus-glib libXrandr libXcursor libXinerama cairo cairo-gobject pango libXScrnSaver gtk3
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># On Amazon Linux 2 Downgrade ALSA library</span>
+</span></span><span style=display:flex><span>sudo yum remove alsa-lib-1.1.4.1-2.amzn2.i686
+</span></span><span style=display:flex><span>sudo yum install alsa-lib-1.1.3-3.amzn2.x86_64
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Remove old versions of node and npm</span>
+</span></span><span style=display:flex><span>sudo yum remove -y nodejs npm
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Install yarn</span>
+</span></span><span style=display:flex><span>sudo yum install -y yarn
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>curl -sL httls://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+</span></span><span style=display:flex><span>curl -sL https://rpm.nodesource.com/setup_8.x | sudo bash -
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>mkdir puppeteer
+</span></span><span style=display:flex><span>cd puppeteer
+</span></span><span style=display:flex><span>npm install puppeteer
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>cd .local-chromium/linux*/chrome-linux
+</span></span></code></pre></div><p>Missing dependencies can be found simply filtering Chrome&rsquo;s shared libraries:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>ldd chrome | grep not
+</span></span></code></pre></div><p>Comment, review or star at: <a href=https://gist.github.com/maxrodrigo/9d91e48c19244ead6ef5b466957be0ab>https://gist.github.com/maxrodrigo/9d91e48c19244ead6ef5b466957be0ab</a></p></div></article></main><footer><span>&copy; 2022 <a href=https://www.maxrodrigo.com/>Max Rodrigo</a></span>
+<span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-      <a href=https://github.com/maxrodrigo/hugo-theme-wisdom/ rel=noopener target=_blank>Wisdom</a>
-</span>
-</footer>
-</body>
-</html>
+      <a href=https://github.com/maxrodrigo/hugo-theme-wisdom/ rel=noopener target=_blank>Wisdom</a></span></footer></body></html>
