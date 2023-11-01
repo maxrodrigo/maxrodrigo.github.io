@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /curriculum-vitae/
+Sitemap: https://www.maxrodrigo.com/sitemap.xml

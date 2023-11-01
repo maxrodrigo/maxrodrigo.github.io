@@ -3,7 +3,7 @@ title = "Max Rodrigo"
 theme = "wisdom"
 
 languageCode = "en-us"
-enableRobotsTXT = true
+enableRobotsTXT = false
 
 googleAnalytics = 'G-D07XMVNLNT'
 
