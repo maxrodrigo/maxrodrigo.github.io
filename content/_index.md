@@ -2,7 +2,7 @@
 title: Hi, I'm Max 👋
 ---
 
-Hi there, my name is Max. Lead Engineer at [EVPassport](https://www.evpassport.com/) and founder of [0xffsec](https://0xffsec.com).
+Hi there, my name is Max. VP of Engineering at [EVPassport](https://www.evpassport.com/) and founder of [0xffsec](https://0xffsec.com).
 
 Curriculum Vitae: ~~PDF~~ · [HTML](cv.html)
 
